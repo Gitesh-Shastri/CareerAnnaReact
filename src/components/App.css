@@ -1,0 +1,30 @@
+.App {
+  text-align: center;
+  padding: 0px;
+  color: #1E313A;;
+}
+html, body, .App, .App>div {
+    height: 100%
+  }
+.row {
+    marginLeft: 0;
+    marginRight: 0;
+}
+.padding-none{padding: 0px;}
+.padding-left-none{padding-left: 0px;}
+.padding-right-none{padding-right: 0px;}
+a{color: inherit;}
+a:hover,a:focus{text-decoration: none;}
+ul li{list-style: none;}
+ol,ul{padding: 0px;}
+body{font-family: 'Roboto', sans-serif;}
+.primary_btn{
+	letter-spacing: 0;
+    font-size: 14px;
+    text-transform: capitalize;
+    font-weight: 400;
+	color: #fff !important;
+    border: 0.125rem solid transparent;
+    padding: 8px 16px !important;
+    margin-top: 5px;
+}

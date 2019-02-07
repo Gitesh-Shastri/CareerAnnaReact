@@ -1,0 +1,60 @@
+.testimonialCard{
+    height: 254px;
+    width: 255px;
+    background: #1989CD;
+    border-radius: 0px 10px 0px 0px;
+}
+.testimonial_course{
+    margin-top: 36px;
+    width: 228px;
+}
+.testimonialtext{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 141px;
+    width: 141px;
+    background: white;
+}
+.testimonialheading{ 
+    
+    margin-top: 38px;
+    font-size: 18px;
+    font-weight: 800;
+}
+.testimonialheading2{
+    font-size: 18px;
+    font-weight: 800;
+}
+.fa-caret-right, .fa-caret-left{    
+    margin-left: 4px;
+    font-size: 25px;
+}
+.user_name{
+    min-height: 40px;
+    font-size: 14px;
+    font-weight: 800;
+    letter-spacing: 0.07rem;
+}
+.profession{
+    font-size: 10px;
+    font-weight: 500;
+    min-height: 30px;
+    letter-spacing: 0.07rem;
+}
+.fa-star{
+    margin-right: 7px;
+}
+.review{
+    padding-top: 30px;
+    min-height: 114px;
+    font-size: 9px;
+    letter-spacing: 0.05rem;
+}
+#testimonial_slider{
+    margin-left: 37px;
+}
+.review_created{
+    margin-top: 10px;
+    font-size: 10px;
+}
