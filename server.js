@@ -19,7 +19,7 @@ if(!dev) {
     app.use(express.static('/build'))
 
     app.use('*', (req, res) => {
-        res.sendFile('/index.html')
+        res.sendFile('build/index.html')
     })
 }
 
