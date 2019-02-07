@@ -16,10 +16,11 @@ if(!dev) {
     app.use(compression())
     app.use(morgan('common'))
 
-    app.use(express.static('/build'))
+    app.use(express.static(__dirname + "/build"));
 
     app.use('*', (req, res) => {
-        res.sendFile('build/index.html')
+        const index = path.join(__dirname, 'build', 'index.html');
+        res.sendFile(index);
     })
 }
 
