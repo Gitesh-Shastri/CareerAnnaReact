@@ -16,10 +16,10 @@ if(!dev) {
     app.use(compression())
     app.use(morgan('common'))
 
-    app.use(express.static('build'))
+    app.use(express.static('/build'))
 
     app.use('*', (req, res) => {
-        res.sendFile('index.html')
+        res.sendFile('/index.html')
     })
 }
 
