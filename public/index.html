@@ -82,16 +82,16 @@
     });
     $("#range1").on("change", function(e) {
 	    e.preventDefault();
-	    console.log(inputType.val());
 	    // console.log(e.item.index);
 	    // FIGURE OUT HOW TO GET CAROUSEL INDEX
 	   
-	    $('.owl-carousel').trigger('to.owl.carousel', [inputType.val(),1,true]);
+	    $('#trending_slider').trigger('to.owl.carousl', [inputType.val(),1,true]);
 	    //get inout range count for max 
-      var owl_item = $('.owl-item').length;
+      var owl_item = $('#trending_slider .owl-item').length;
       console.log(owl_item);
 	    $('#range1').attr('max',owl_item);
-	  });
+    });
+    
   });
 </script>
   </body>
