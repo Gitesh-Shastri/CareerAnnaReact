@@ -16,8 +16,10 @@ if(!dev) {
     app.use(compression())
     app.use(morgan('common'))
 
+    app.use(express.static('client/build'));
+
     app.use('*', (req, res) => {
-        res.sendfile( __dirname + '/build/index.html' );
+        res.sendfile(path.resolve(__dirname, 'client', 'build', 'index.html'));
     })
 }
 
