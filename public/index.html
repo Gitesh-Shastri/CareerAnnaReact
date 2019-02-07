@@ -19,9 +19,9 @@
       manifest.json provides metadata used when your web app is added to the
       homescreen on Android. See https://developers.google.com/web/fundamentals/web-app-manifest/
     -->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+	<link rel="stylesheet" href="%PUBLIC_URL%/bootstrap.min.css">
 	<link href="https://fonts.googleapis.com/css?family=Roboto:400,700,900" rel="stylesheet">
-	<link href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/assets/owl.carousel.min.css" rel="stylesheet">
+	<link href="%PUBLIC_URL%/owl.carousel.min.css" rel="stylesheet">
 	<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
     <!--
@@ -49,15 +49,29 @@
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
 
-<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/owl.carousel.min.js"></script>
+<script src="%PUBLIC_URL%/jquery-3.3.1.min.js"></script>
+<script src="%PUBLIC_URL%/bootstrap.min.js"></script>
+<script src="%PUBLIC_URL%/owl.carousel.min.js"></script>
 <script>
   $(document).ready(function() {
      var owl = $(".owl-carousel");
      var inputType = $('#range1');
      owl.owlCarousel({
-	      items : 3,
+      responsive:{
+        0:{
+            items:1.2,
+            nav:true
+        },
+        600:{
+            items:3,
+            nav:false
+        },
+        1000:{
+            items:3.3,
+            nav:true,
+            loop:false
+        }
+    },
 	      //loop:true,
 	      margin:20,
     	  responsiveClass:true,

@@ -22,7 +22,7 @@ li {
 }
 
 .btn-info {  
-      margin-right: 25px;
+    margin-right: 25px;
     margin-bottom: 30px;
     background: #1989CD !important;
     margin-top: 23px;
@@ -38,13 +38,38 @@ li {
     padding: 0px;
 }
 .logo_image{  
-      position: absolute;
+    position: absolute;
     width: 223px;
     height: 70px;
     left: 24px;
     top: 12px;
-    }
-    .link_redirect{
+}
+.link_redirect{
         margin-top: 40px;
         padding: 0px 26px !important;
-    }
+}
+@media only screen and (max-width: 650px) {
+  .navbar-default{
+    height: 50px;
+  }
+  .logo_image{
+    width: 130px;
+    height: 47px;
+    margin-top: 0px !important;
+    top: 5px;
+  }
+  .navbar-toggle{
+    margin-right: 30px !important;
+    margin-top: 12px !important;
+  }
+  #myNavbar{
+    background: #1E313A;
+    color: white;
+  }
+  #myNavbar li a{
+    color: white !important;   
+  }
+  #myNavbar .btn-info{
+    margin-left: 27%;
+  }
+}    

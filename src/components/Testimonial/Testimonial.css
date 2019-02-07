@@ -58,3 +58,12 @@
     margin-top: 10px;
     font-size: 10px;
 }
+@media only screen and (max-width: 650px) {
+    #testimonial_slider{
+        margin-left: -10px !important;
+    }
+    .img-responsive{
+        width: 120px !important;
+        padding-bottom: 20px !important;
+    }
+}

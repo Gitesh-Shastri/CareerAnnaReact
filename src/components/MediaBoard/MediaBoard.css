@@ -137,3 +137,20 @@
   
   .related_courses input[type=range]:focus::-ms-fill-upper {background: #237CAA;}
   
+
+@media only screen and (max-width: 650px) {
+  .MediaBoard{
+    padding-left: 30px !important;
+  }
+  .mediatab_text{
+    position: absolute;
+    bottom: -12px;
+    padding: 0px !important;
+    right: 10px !important;
+    font-weight: 800;
+    font-size: 26px;
+  }
+  .readFull{
+    padding-right: 20px !important;
+  }
+}

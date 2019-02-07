@@ -24,7 +24,7 @@ class IntroSlider extends Component {
       </div>
       <div class="row">
         <div class="col-sm-5 col-md-6 "><h4 class="choose">Choose the Language of Your Choice. </h4></div> 
-        <div class="col-md-1"><h4 class="english">English</h4></div>
+        <div class="col-md-1 language_small"><h4 class="english">English</h4></div>
         <div class="width"></div>
             <div class="col-md-1 multi"><h4>हिंदी</h4></div>
             <div class="col-md-1 multi"><h4>தமிழ்</h4></div>
@@ -32,13 +32,15 @@ class IntroSlider extends Component {
       </div> 
       <div class="row">
         <div class="col-sm-5 col-md-6 upcoming_heading"><h4>upcoming languages</h4></div>   
+        <div class="row">
         <div class="col-md-1 gujrati"><h4>ગુજરાતી</h4></div>
-            <div class="col-md-1"><h4>বাংলা</h4></div>
-            <div class="col-md-1"><h4> മലയാളം </h4></div>
-            <div class="col-md-1"><h4>ਪੰਜਾਬੀ</h4></div>
-            <div class="col-md-1"><h4> मराठी </h4></div>
-            <div class="col-md-1"><h4>  ಕನ್ನಡ  </h4></div>
+            <div class="col-md-1 others"><h4>বাংলা</h4></div>
+            <div class="col-md-1 others" ><h4> മലയാളം </h4></div>
+            <div class="col-md-1 others"><h4>ਪੰਜਾਬੀ</h4></div>
+            <div class="col-md-1 others"><h4> मराठी </h4></div>
+            <div class="col-md-1 others"><h4>  ಕನ್ನಡ  </h4></div>
       </div>
+    </div>
       </div>
     );
   }

@@ -37,8 +37,7 @@ class Footer extends Component {
 												<li><a href="https://www.careeranna.cohttps://www.careeranna.com/m/SNAP" title="SNAP" target="_blank">SNAP</a></li>
 												<li><a href="https://www.careeranna.com/TISSNET" title="TISSNET" target="_blank">TISSNET</a></li>
 												<li><a href="https://www.careeranna.com/MICAT" title="MICAT" target="_blank">MICAT</a></li>
-												<li><a href="https://www.careeranna.com/IIFT" title="IIFT" target="_blank">IIFT</a></li>
-												
+												<li><a href="https://www.careeranna.com/IIFT" title="IIFT" target="_blank">IIFT</a></li>	
 											</ul>
 										</div>
 										<div class="col-md-3 col-xs-6 padding-left-none">
@@ -84,10 +83,10 @@ class Footer extends Component {
 						<div class="col-md-12">
 								<div class="coprwrite_link col-md-12 padding-none">
 										<ul class="list-inline">
-											<li><a href="#">overview</a></li>
-											<li><a href="#">overview</a></li>
-											<li><a href="#">overview</a></li>
-											<li><a href="#">overview</a></li>
+											<li class="col-xs-3 overview"><a href="#">overview</a></li>
+											<li class="col-xs-3 overview"><a href="#">overview</a></li>
+											<li class="col-xs-3 overview"><a href="#">overview</a></li>
+											<li class="col-xs-3 overview"><a href="#">overview</a></li>
 										</ul>
 									</div>
 						</div>
