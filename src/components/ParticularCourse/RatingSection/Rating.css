@@ -1,0 +1,130 @@
+.Rating {
+    text-align: left !important;
+    padding-left: 90px !important;
+    padding-top: 50px !important;
+    background: #dddee133;
+    padding-bottom: 40px !important;
+    margin-bottom: 60px !important;
+}
+.Rating .course_rating_left_wrapper h3 {
+    font-size: 65px;
+    font-weight: 800;
+    line-height: 25px;
+}
+.Rating .rating_off_5{
+    font-size: 36px;
+}
+.Rating .course_rating_left_wrapper h4 {
+    font-size: 36px !important;
+    font-weight: 700; 
+    padding: 0px !important;
+}
+.Rating .course_rating_left_wrapper h5 {
+    font-size: 18px !important;
+    padding: 0px !important;
+}
+.Rating .rating_name{
+    text-align: right !important;
+    font-size: 16px !important;
+    size: 17px !important;
+    padding-bottom: 10px !important;
+}
+.Rating .progress{
+    height: 10px !important;
+    margin-top: 5px !important;
+}
+.Rating .progress-bar{
+    margin-left: -12px !important;
+    width: 100% !important;
+}
+.Rating .rating_progress{    
+    width: 50%;
+    margin-top: 6px !important;
+    height: 12px;
+    background-color: #8080804d;
+    border-radius: 20px !important;
+}
+.Rating .myBar {
+    border-radius: 10px !important;
+    margin-left: -14px !important;
+    height: 12px;
+    background-color: #1989CD;
+}
+.Rating .index{
+    width: 163px !important;
+}
+.Rating .mock{
+    width: 158.24px !important;
+}
+.Rating .depth{
+    width: 158.24px !important;
+}
+.Rating .doubt{
+    width: 165.12px !important;
+}
+.Rating .mentor{
+    width: 159.96px !important;
+}
+.Rating .quality{
+    width: 165.84px !important;
+}
+.Rating .percent_text{
+    visibility: hidden;
+    text-align: center !important;
+    color: white;
+    opacity: 0;
+    transition: visibility 0s, opacity 0.8s linear;
+    letter-spacing: 0.08rem;
+    font-weight: 700 !important;
+    font-size: 11px !important;
+}
+.Rating .rating_progress:hover .percent_text {
+    visibility: visible;
+    opacity: 1;
+}
+
+@media only screen and (max-width: 650px) {
+    .Rating {
+        margin-top: 20px !important;
+        padding-left: 0px !important;
+    }
+    .Rating .rating_off_5{
+        font-size: 30px !important;
+    }
+
+    .Rating .course_rating_left_wrapper h5 {
+        font-size: 15px !important;
+        padding-left: 50px !important;
+    }
+    .Rating .course_rating_left_wrapper h3 {
+        padding-left: 50px !important;
+        font-size: 50px;
+    }
+    .Rating .course_rating_left_wrapper h4{
+        padding-left: 50px !important;    
+    }
+    .Rating .rating_name{
+        text-align: center !important;
+    }
+    .Rating .rating_progress {
+        width: 100%;
+    }
+    .Rating .index{
+        width: 95% !important;
+    }
+    .Rating .mock{
+        width: 92% !important;
+    }
+    .Rating .depth{
+        width: 92% !important;
+    }
+    .Rating .doubt{
+        width: 96% !important;
+    }
+    .Rating .mentor{
+        width: 93% !important;
+    }
+    .Rating .quality{
+        width: 97% !important;
+    }
+}

@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 
 import './Navigation.css';
+import {Link} from 'react-router-dom';
 
 class Navigation extends Component {
   render() {
@@ -19,13 +20,13 @@ class Navigation extends Component {
                 <span class="icon-bar" />
                 <span class="icon-bar" />
               </button>
-              <a class="navbar-brand" href="#myPage">
+              <Link class="navbar-brand" to="/">
                 <img
                   class="logo_image"
                   src="https://www.careeranna.com/upload/main_page_testing/LOGO-01.png"
                   id="wordmark"
                 />
-              </a>
+                </Link>
             </div>
             <div class="collapse navbar-collapse" id="myNavbar">
               <ul class="nav navbar-nav navbar-right">

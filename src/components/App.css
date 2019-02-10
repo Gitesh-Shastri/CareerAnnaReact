@@ -1,14 +1,9 @@
 .App {
-  text-align: center;
-  padding: 0px;
-  color: #1E313A;;
-}
-html, body, .App, .App>div {
-    height: 100%
-  }
+    padding: 0px;
+} 
 .row {
-    marginLeft: 0;
-    marginRight: 0;
+      margin-left: 0px !important;
+      margin-right: 0px !important;
 }
 .padding-none{padding: 0px;}
 .padding-left-none{padding-left: 0px;}
@@ -19,12 +14,23 @@ ul li{list-style: none;}
 ol,ul{padding: 0px;}
 body{font-family: 'Roboto', sans-serif;}
 .primary_btn{
-	letter-spacing: 0;
-    font-size: 14px;
-    text-transform: capitalize;
-    font-weight: 400;
-	color: #fff !important;
-    border: 0.125rem solid transparent;
-    padding: 8px 16px !important;
-    margin-top: 5px;
+  letter-spacing: 0;
+  font-size: 14px;
+  text-transform: capitalize;
+  font-weight: 400;
+  color: #fff !important;
+  border: 0.125rem solid transparent;
+  padding: 8px 16px !important;
+  margin-top: 5px;
 }
+.owl-carousel .owl-nav .owl-prev {
+  position: absolute;
+  top: 307px;
+  left: -20px;
+}
+.owl-carousel .owl-nav .owl-next {
+  position: absolute;
+  top: 311px;
+  left: 99%;
+}
+  
