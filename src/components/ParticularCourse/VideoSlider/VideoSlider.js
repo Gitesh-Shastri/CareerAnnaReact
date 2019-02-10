@@ -94,7 +94,7 @@ class VideoSlider extends Component {
     
     return (
     <section class="video_slider row">
-			<div class={`video_card_view hidden-xs active-video-slide-${video_item.index}`}>
+			<div class={`video_card_view active-video-slide-${video_item.index}`}>
 			<div class="video_view_wrapper" style={{
 				'transform': `translateX(-${video_item.index*(100/videos_playlist.length)}%)`
 			}}>
@@ -104,14 +104,14 @@ class VideoSlider extends Component {
 					}
 				</div>
 			</div>
-            <div class="col-md-12 hidden-lg col-xs-12 video_card_view_small">
+            <div class="col-md-12 hidden-lg hidden-xs col-xs-12 video_card_view_small">
                 <div class="col-xs-1"></div>
                 <div class="col-xs-8">
                     <Card key={video_item.index} Video = {video_item}/>
                 </div>
                 <div class="col-xs-2"></div>
             </div>
-            <div class="col-md-12 col-xs-12">
+            <div class="col-md-12 col-xs-12 arrow_video">
 			<button 
 					class="next_video_left video_prev"
 					onClick={() => this.prevProperty()} 

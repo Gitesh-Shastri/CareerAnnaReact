@@ -23,12 +23,7 @@ class MediaBoard extends Component {
             </div> 
              <div class="col-md-12 readFulltext">
                     Due to the online nature of the program, will I need<br/> to be available online at specific times for my<br/> Certification program.
-        </div>  
-         <div class="col-md-12 range_input_sec related_courses">
-                <input class="range-slider" type="range" id="range" name="range" min="0" step="1"  />
-			
-            </div>
-
+        </div> 
         </div>  
         </div>
     );

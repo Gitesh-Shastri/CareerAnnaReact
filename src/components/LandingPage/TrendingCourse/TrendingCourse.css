@@ -10,7 +10,7 @@
 }
 .TrendingCourse{
     margin-left: 115px;
-    margin-top: 150px;
+    margin-top: 80px;
 }
 .trendingheading{    
     padding-top: 30px;
@@ -155,7 +155,7 @@ button{
 @media only screen and (max-width: 650px) {
     .TrendingCourse{
         text-align: left;
-        margin-left: 60px !important;
+        margin-left: 1rem !important;
         margin-top: 60px !important;
     }
     .trendingCard{

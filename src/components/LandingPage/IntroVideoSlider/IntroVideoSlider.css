@@ -122,18 +122,20 @@ iframe{
     width: 82px;
 }
 .gujrati{
-    text-align: left !important;
     padding-left: 13px !important; 
 }
 .introheading{
     padding-left: 39px !important;
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 640px) {
     .IntroSlider .choose_language, .choose{
         padding-left: 8px !important;
     }
     .IntroSlider .language {
         padding-left: 0px !important;
+    }
+    .IntroSlider .upcoming_languages h4{
+        text-align: center !important;
     }
     .IntroSlider .upcoming_languages{
         text-align: center !important;

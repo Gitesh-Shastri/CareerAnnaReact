@@ -86,7 +86,25 @@
         top: 50px !important;
         left: 10% !important;
     }
+    .arrow_video {
+        padding-top: 170px !important;
+    }
+    .video_slider {    
+        padding-top: 20px !important;
+        padding-top: 50px !important;
+        padding-bottom: 40px !important;
+        height: 340px !important;
+        overflow-x: hidden !important;
+        position: relative !important;
+        width: 100% !important;
+    }
 
+    .video_slider .video_card_view {
+        width: 100% !important;
+        position: absolute !important;
+        /* max-width: 270px !important; */
+        margin: 0 auto;
+    }
 .video_slider .next_video_right {
     border: none;
     position: static;
