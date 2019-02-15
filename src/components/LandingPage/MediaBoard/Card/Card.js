@@ -10,12 +10,12 @@ const Card = ({medias, current_index}) => {
     return (
         <div className={css_class}>
             <div class="row">
-                <div className="col-md-3">
+                <div className="col-xs-3 col-md-3">
                     <div className="media_pic">
                         <img src={media_item.image_url} alt=""/>
                     </div>
                 </div>
-                <div className="col-md-9">
+                <div className="col-xs-9 col-md-9 media_desc">
                     <div className="title">
                         {media_item.title}
                     </div>

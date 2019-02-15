@@ -25,7 +25,7 @@ class TrendingCourse extends Component {
                 ratings: "4.9",
                 index: 1,
                 key:"3",
-                url: "https://www.careeranna.com/Python-Programming-Online-Course"
+                url: "https://www.careeranna.com/certification/python-programming-online-course"
             },{
                 pic_url: "https://www.careeranna.com/uploads/product_images/Course_Images/2018/08/15336800721527172691img6.jpg",
                 title:"Data Science with Python",
@@ -34,7 +34,7 @@ class TrendingCourse extends Component {
                 ratings: "4.9",
                 index: 2,
                 key:"4",
-                url: "https://www.careeranna.com/Data-Science-with-Python"
+                url: "https://www.careeranna.com/certification/data-science-python"
             },{index: 0,
                 
                 pic_url: "https://www.careeranna.com/uploads/product_images/Course_Images/2018/07/15324338871529734481Image_abhishek.jpg",
@@ -44,7 +44,7 @@ class TrendingCourse extends Component {
                 leaners: "3960+ Learners",
                 ratings: "4.89",
                 key:"5",
-                url: "https://www.careeranna.com/Certified-Business-Analyst-With-Excel"
+                url: "https://www.careeranna.com/certification/certified-business-analyst-excel"
             },
             {
                 pic_url: "https://www.careeranna.com/uploads/product_images/Course_Images/2019/01/1548055203tissnet.jpg",

@@ -44,15 +44,6 @@ class MBA extends Component {
                 url: "https://www.careeranna.com/CAT-2019-Coaching"
             },
             {
-                pic_url: "https://www.careeranna.com/uploads/product_images/Course_Images/2018/01/1517391168studying-ahead-1421056.jpg",
-                title:"CAT 2018 Coaching",
-                publish: "17th Nov, 2017",
-                index: 3,
-                leaners: "1298+ Learners",
-                ratings: "4.89",
-                url: "https://www.careeranna.com/CAT-2018-Coaching"
-            },
-            {
                 pic_url: "https://www.careeranna.com/uploads/product_images/Course_Images/2018/01/1517390328business-book-and-glasses-1-1241387.jpg",
                 title:"NMAT Coaching Classes",
                 publish: "10th Sep, 2017",

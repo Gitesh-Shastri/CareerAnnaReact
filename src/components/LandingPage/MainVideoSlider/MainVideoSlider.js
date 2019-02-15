@@ -6,30 +6,78 @@ import Card from './Card/Card';
 class MainVideoSlider extends Component {
 
   constructor(props){
-		super(props);
+    super(props);
+    if(props.title == 'Trending') {
 		this.state = {
 			videos_playlist: [
+        {
+          video_url: "qYU7IczVmrY?ecver=2",
+          index: 0,
+          title: "Yogi Adityanath govt's 'gau raksha' CESS"
+      },
                 {
-                    video_url: "fK0Hqhq86Bg?ecver=2",
-                    index: 0,
-                },{
-                    video_url: "Odw8S0WExac?ecver=2",
+                    video_url: "F492ok-jmTk?ecver=2",
                     index: 1,
+                    title: "Interim Budget 2019"
                 },{
-                    video_url: "6ussc-htZtc?ecver=2",
+                    video_url: "0Mad-5x1g7w?ecver=2",
                     index: 2,
+                    title: "ஹாக்கி உலகம் கப் 2018 "
                 },{
-                    video_url: "B9-2GqctIyE?ecver=2",
+                    video_url: "WvUZdCtZLXM?ecver=2",
                     index: 3,
+                    title: "బ్యాడ్మింటన్ ప్రపంచ ఫెడరేషన్ - 2018"
+                },
+                {
+                  video_url: "DMNwfpnDYOk?ecver=2",
+                  index: 4,
+                  title: "बसवान समिति की रिपोर्ट"
                 }
             ],
-            video_item: {
-                video_url: "fK0Hqhq86Bg?ecver=2",
-                index: 0,
-            },
+            video_item:  {
+              video_url: "qYU7IczVmrY?ecver=2",
+              index: 0,
+              title: "Yogi Adityanath govt's 'gau raksha' CESS"
+          },
             title: props.title,
             disabled: true		
-		}
+    }
+  } else {
+    this.state = {
+			videos_playlist: [
+        {
+          video_url: "2A9ZU7NW-LY?ecver=2",
+          index: 0,
+          title: "RTE अमेंडमेंट बिल "
+      },
+                {
+                    video_url: "PmalfTXtHaw?ecver=2",
+                    index: 1,
+                    title: "Miss Universe 2018"
+                },{
+                    video_url: "NHYJfn-aqsk?ecver=2",
+                    index: 2,
+                    title: "சூறாவளி புயல் Phethai 2018"
+                },{
+                    video_url: "Ijp5aJQAaH0?ecver=2",
+                    index: 3,
+                    title: "இந்தியாவில் உள்ள முக்கிய ஆறுகள் -1"
+                },
+                {
+                  video_url: "FnW7YpliHcU?kecver=2",
+                  index: 4,
+                  title: "ராபி ஆளுமை ஷக்திகண்டா தாஸ்"
+                }
+            ],
+            video_item:  {
+              video_url: "2A9ZU7NW-LY?ecver=2",
+              index: 0,
+              title: "RTE अमेंडमेंट बिल "
+          },
+            title: props.title,
+            disabled: true		
+    } 
+  }
   }
 
   timer() {

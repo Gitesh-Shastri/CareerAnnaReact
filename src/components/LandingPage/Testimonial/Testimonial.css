@@ -79,18 +79,26 @@
 .TestimonialReviews .heading_small {
     display: none;
 }
+.TestimonialReviews .next_video_right_test {
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 2rem;
+    position: relative;
+    top: 282px;
+}
 @media only screen and (max-width: 650px) {
 
     .TestimonialReviews .heading_small {
         display: block;
-        font-size: 2rem;
+        font-size: 1rem;
         padding-top: 0.5rem;
         letter-spacing: 0.03rem;
         text-align: center;
         font-weight: 600;
     }
-.TestimonialReviews .arrow_small{
-    display: block;
-    height: 2rem;
-}
+    .TestimonialReviews .arrow_small{
+        display: block;
+        height: 2rem;
+    }
 }

@@ -55,10 +55,10 @@
     color: white;
     opacity: 1;
     outline: none;
-    padding-bottom: 10px;
-    padding-top: 10px;
+    padding-bottom: 5px;
+    padding-top: 5px;
     top: 34%;
-    padding-right: 20px;
+    padding-right: 15px;
     padding-left: 20px;
     background: #2c4654;
     outline: none;
@@ -82,8 +82,17 @@
         max-width: 0.2rem !important;
         padding: 0px;
     }
+    .MainVideoSlider .heading_small {
+        font-size: 1.3rem !important;
+        text-align: center;
+    }
     .MainVideoSlider .next_video_right {
         display: none;
+    }
+    .MainVideoSlider .next_video_prev_small, .next_video_right_small {
+        border: none;
+        outline: none;
+        background: transparent;
     }
     .MainVideoSlider .heading_small {
         display: block;
@@ -97,6 +106,6 @@
         display: block;
     }
     .MainVideoSlider .video_playlist {
-        padding-top: 3rem;
+        padding-top: 2rem;
     }
 }

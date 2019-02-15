@@ -4,7 +4,8 @@ import YouTube from 'react-youtube';
 
 const Card = ({Video, current_index}) => {  
     const {video_url,
-        index
+        index,
+        title
     } = Video;
 
     
@@ -23,7 +24,7 @@ const Card = ({Video, current_index}) => {
 
                 </div>
                 <div className="video_title">
-                    Cubes Intro
+                    {title}
                 </div>
         </div>
         </div>

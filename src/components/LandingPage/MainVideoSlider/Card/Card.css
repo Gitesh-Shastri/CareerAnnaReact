@@ -15,7 +15,7 @@
 }
 .video_title {
     padding-left: 0.8rem;
-    font-size: 1.2rem;
+    font-size: 0.9rem;
     font-weight: 700;
 }
 .video_player_trending_card.not_active {
@@ -31,4 +31,9 @@
 .video_player_trending_card:hover{
     transform: scale(1.1);
     transition: transform 850ms cubic-bezier(0.455, 0.03, 0.515, 0.955); 
+}
+@media only screen and (max-width: 650px) {
+    .video_player_trending_card {
+        height: 200px;
+    }
 }

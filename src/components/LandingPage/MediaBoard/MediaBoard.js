@@ -69,8 +69,8 @@ timer() {
   })
 }
 }
-componentDidMount() {
-  this.intervalId = setInterval(this.timer.bind(this), 5000);
+ componentDidMount() {
+   this.intervalId = setInterval(this.timer.bind(this), 5000);
 }
 componentWillUnmount(){
   clearInterval(this.intervalId);
@@ -104,7 +104,7 @@ prevProperty = () => {
               }
           </div>
           </div>
-          <div className="col-md-12 media_board_arrow">
+          <div className="col-12 col-md-12 media_board_arrow">
           <button 
                     class="next_video_prev"
                     onClick={() => this.prevProperty()} 
@@ -113,7 +113,7 @@ prevProperty = () => {
                 ><i class='fa fa-angle-left'></i></button>
              
                 <button 
-                class="next_video_right" 
+                class="next_video_right_media" 
                onClick={() => this.nextProperty()}
                disabled={media.index==medias.length-2}
                hidden={media.index==medias.length-2}
