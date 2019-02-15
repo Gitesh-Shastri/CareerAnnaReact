@@ -77,28 +77,29 @@
     position: absolute;
     display: flex;
 }
-.TrendingCourse .next_video_prev{    
-    position: relative;
+.TrendingCourse .next_video_prev{  
+    position: absolute;
     border-radius: 50%;
     color: white;
     opacity: 1;
     outline: none;
     padding-bottom: 5px;
-    padding-top: 5px;
-    top: -190px;
-    left: 95%;
+    left: 75%;
+    padding-top: 6px;
+    top: 40%;
     padding-right: 20px;
-    padding-left: 18px;
+    padding-left: 20px;
     background: #2c4654;
-    border: 2px solid #fff;
+    outline: none;
+    border: 2px solid white;
 }
-.TrendingCourse .next_video_right{    
+.next_video_right{    
     position: relative;
     border-radius: 50%;
     color: white;
     opacity: 1;
     font-size: 25px;
-    outline: none;
+    outline: none !important;
     padding-bottom: 5px;
     padding-top: 5px;
     top: 47%;
@@ -118,8 +119,7 @@
         text-align: center;
     }
     .TrendingCourse .others {
-        padding-left: 2rem;
-        min-width: 30%;
+        min-width: 50%;
     }
     .TrendingCourse .next_video_right {
         display: none;
@@ -129,10 +129,15 @@
     }
     .TrendingCourse .heading_small {
         display: block;
-        font-size: 2rem;
+        font-size: 1.3rem;
         padding-top: 0.5rem;
         letter-spacing: 0.03rem;
         text-align: center;
         font-weight: 600;
+    }
+    .next_video_prev_small, .next_video_right_small {
+        background: transparent !important;
+        outline: none !important;
+        border: none !important;
     }
 }

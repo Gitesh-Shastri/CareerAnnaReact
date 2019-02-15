@@ -63,3 +63,11 @@
     padding-left: 0.5rem;
     font-family: fontAwesome;
 }
+@media only screen and (max-width: 650px) {
+    .mediboard_card {
+        width: 255px !important;
+        height: 300px;
+        padding: 1rem;
+        opacity: 0.8;
+    }
+}

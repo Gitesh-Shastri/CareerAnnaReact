@@ -2,7 +2,6 @@
     text-align: left;
     padding-top: 2rem;
 }
-
 .MBACourses .next_video_prev{       
     position: relative;
     border-radius: 50%;
@@ -26,7 +25,7 @@
     font-weight: 900;
     font-size: 24px;
 }
-.MBACourses .next_video_right{    
+.next_video_right{    
     position: relative;
     border-radius: 50%;
     color: white;
@@ -229,7 +228,7 @@
     .MBACard{
         margin-left: 20% !important;
     }
-    .mba_arrow .next_video_left{
+        .mba_arrow .next_video_left{
         border-radius: 10px !important;
         background: #2487d3 !important;
         border: none;
@@ -255,7 +254,7 @@
     }
     .MBACourses .heading_small {
         display: block;
-        font-size: 2rem;
+        font-size: 1.3rem;
         padding-top: 0.5rem;
         letter-spacing: 0.03rem;
         text-align: center;

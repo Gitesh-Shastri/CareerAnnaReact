@@ -9,12 +9,12 @@ class SkillUp extends Component {
         courses: [
             {
                 pic_url: "https://www.careeranna.com/uploads/product_images/Course_Images/2018/09/1537978071machinelearning.jpg",
-                title: "Machine Learning Course For Non Developers",
+                title: "Machine Learning Course For Non ...",
                 publish: "21st Jan, 2019",
                 leaners: "154+ Learners",
                 index: 0,
                 ratings: "5",
-                url: "https://www.careeranna.com/Machine-Learning-Course-For-Non-Developers"
+                url: "https://www.careeranna.com/certification/machine-learning-course"
                 },
             {
                 pic_url: "https://www.careeranna.com/uploads/product_images/Course_Images/2018/09/1537969035AI.jpg",
@@ -23,7 +23,7 @@ class SkillUp extends Component {
                 leaners: "1260+ Learners",
                 index: 1,
                 ratings: "4.8",
-                url: "https://www.careeranna.com/Artificial-Intelligence-Course"
+                url: "https://www.careeranna.com/certification/artificial-intelligence-course"
                 },
             {
                 pic_url: "https://www.careeranna.com/uploads/product_images/Course_Images/2018/08/1534844920Data_science_with_python.jpg",
@@ -32,7 +32,7 @@ class SkillUp extends Component {
                 leaners: "4603+ Learners",
                 index: 2,
                 ratings: "4.9",
-                url: "https://www.careeranna.com/Python-Programming-Online-Course"
+                url: "https://www.careeranna.com/certification/python-programming-online-course"
             },
             {
                 pic_url: "https://www.careeranna.com/uploads/product_images/Course_Images/2018/08/153448725715336800721527172691img6.jpg",
@@ -41,7 +41,7 @@ class SkillUp extends Component {
                 leaners: "147+ Learners",
                 index: 3,
                 ratings: "4.8",
-                url: "https://www.careeranna.com/Product-Management"
+                url: "https://www.careeranna.com/certification/product-management"
             },
             {
                 pic_url: "https://www.careeranna.com/uploads/product_images/Course_Images/2018/08/15336800721527172691img6.jpg",
@@ -50,7 +50,7 @@ class SkillUp extends Component {
                 index: 4,
                 leaners: "1258+ Learners",
                 ratings: "4.9",
-                url: "https://www.careeranna.com/Data-Science-with-Python"
+                url: "https://www.careeranna.com/certification/data-science-python"
             },
             {
                 pic_url: "https://www.careeranna.com/uploads/product_images/Course_Images/2018/07/15324338871529734481Image_abhishek.jpg",
@@ -59,16 +59,16 @@ class SkillUp extends Component {
                 index: 5,
                 leaners: "3960+ Learners",
                 ratings: "4.89",
-                url: "https://www.careeranna.com/Certified-Business-Analyst-With-Excel"
+                url: "https://www.careeranna.com/certification/certified-business-analyst-excel"
             },
             {
                 pic_url: "https://www.careeranna.com/uploads/product_images/Course_Images/2018/06/1529734481Image_abhishek.jpg",
-                title:"Data Analysis and Visualisation Professional",
+                title:"Data Analysis and Visualisation ...",
                 publish: "7th Sep, 2017",
                 index: 6,
                 leaners: "1257+ Learners",
                 ratings: "4.89",
-                url: "https://www.careeranna.com/Data-Analysis-and-Visualisation-Professional"
+                url: "https://www.careeranna.com/certification/Data-Analysis-and-Visualisation-Professional"
             },
             {
                 pic_url: "https://www.careeranna.com/uploads/product_images/Course_Images/2018/05/1527577474new_copy.jpg",
@@ -77,7 +77,7 @@ class SkillUp extends Component {
                 index: 7,
                 leaners: "4790+ Learners",
                 ratings: "4.7",
-                url: "https://www.careeranna.com/Certified-Associate-in-Material-Management"
+                url: "https://www.careeranna.com/certification/Certified-Associate-in-Material-Management"
             }   
         ]
         ,course:  {
@@ -87,7 +87,7 @@ class SkillUp extends Component {
             leaners: "154+ Learners",
             index: 0,
             ratings: "5",
-            url: "https://www.careeranna.com/Machine-Learning-Course-For-Non-Developers"
+            url: "https://www.careeranna.com/certification/machine-learning-course"
             }
     } 
 

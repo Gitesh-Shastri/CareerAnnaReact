@@ -21,6 +21,9 @@
     text-align: center;
     margin-bottom: 0.5rem;
 }
+.IntroSlider .subsubsubheading {
+    text-align: center;
+}
 .IntroSlider .subsubheading{
     font-size: 1rem;
     text-align: center;
@@ -84,7 +87,7 @@
 }
 .IntroSlider .category h4 {
     padding-left: 2.5rem;
-    padding-right: 1rem;
+    padding-right: 0.5rem;
     line-height: 2rem;
     text-align: center;
     font-weight: 700;
@@ -98,19 +101,25 @@
         padding-left: 0px;
         text-align: center;
     }
+    .IntroSlider .heading {
+        font-size: 2rem;
+    }
     .IntroSlider .language_selector {
         margin-right: 0rem;
-        min-width: 25%;
+        min-width: 50%;
     }
     .IntroSlider .upcoming_heading {
         text-align: center;
     }
     .IntroSlider .category{
         min-width: 30%;
-        margin-left: 1rem;
+        margin-left: 3rem;
     }
     .IntroSlider .category h4{
         text-align: left;
+        padding-left: 0rem;
+        padding-right: 0rem;
+        font-size: 1rem;
     }
     .IntroSlider .categories{
         padding-left: 1rem;

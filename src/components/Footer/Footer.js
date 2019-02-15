@@ -18,7 +18,7 @@ class Footer extends Component {
 				<div class="col-md-6">
 					<div class="row">
 						
-	                    <div class="col-md-12 subs_form row">
+	                    <div class="col-md-12 subs_form d-none d-md-block row">
 								<div class="col-md-12 social_icons">
 														<ul class="list-inline pull-right">
 															<li><a href="#"><i class="fa fa-facebook"></i></a></li>
@@ -44,35 +44,30 @@ class Footer extends Component {
 					</div>
 				</div>
 				<div class="col-md-12 row footer_left_links">
-								<div class="col-md-3 col col-sm-6 padding-left-none">
+								<div class="col-md-3 col-6 padding-left-none">
 										<h6>Free Video Resource</h6>
 										<ul>
-											  <li><a href="https://www.careeranna.com/certification/hr" title="Finance" target="_blank">English Free Videos</a></li>
-											  <li><a href="https://www.careeranna.com/certification/marketing" title="Marketing" target="_blank">Hindi Free Videos</a></li>
-											  <li><a href="https://www.careeranna.com/certification/marketing" title="Marketing" target="_blank">Telugu Free Videos</a></li>
-											  <li><a href="https://www.careeranna.com/certification/hr" title="Human Resource" target="_blank">Tamil Free Videos</a></li>
-											  <li><a href="#" title="Information Technology" target="_blank">Politics Free Videos</a></li>
-											  <li><a href="https://www.careeranna.com/certification/marketing" title="Project Management" target="_blank">Sports Free Videos</a></li>
-											  <li><a href="https://www.careeranna.com/certification/marketing" title="Product Marketing" target="_blank">Economy Free Videos</a></li>
-											  <li><a href="https://www.careeranna.com/certification/marketing" title="Project Management" target="_blank">Business Free Videos</a></li>
-											  <li><a href="https://www.careeranna.com/certification/marketing" title="Product Marketing" target="_blank">Technology Free Videos</a></li>
+											  <li><a href="https://www.careeranna.com/english/free/videos" title="Finance" target="_blank">English Free Videos</a></li>
+											  <li><a href="https://www.careeranna.com/hindi/free/videos" title="Marketing" target="_blank">Hindi Free Videos</a></li>
+											  <li><a href="https://www.careeranna.com/tamil/free/videos" title="Marketing" target="_blank">Tamil Free Videos</a></li>
+											  <li><a href="https://www.careeranna.com/telugu/free/videos" title="Human Resource" target="_blank">Telugu Free Videos</a></li>
 											  
 										</ul>
 									</div>
 									
-									<div class="col col-md-3 col-xs-6 padding-left-none">
+									<div class="col-md-3 col-6 padding-left-none">
 											<h6>MBA</h6>
 											<ul>
 												<li><a href="https://www.careeranna.com/CAT" title="CAT" target="_blank">CAT</a></li>
 												<li><a href="https://www.careeranna.com/XAT" title="XAT" target="_blank">XAT</a></li>
 												<li><a href="https://www.careeranna.com/NMAT" title="NMAT" target="_blank">NMAT</a></li>
-												<li><a href="https://www.careeranna.cohttps://www.careeranna.com/m/SNAP" title="SNAP" target="_blank">SNAP</a></li>
+												<li><a href="https://www.careeranna.com/SNAP" title="SNAP" target="_blank">SNAP</a></li>
 												<li><a href="https://www.careeranna.com/TISSNET" title="TISSNET" target="_blank">TISSNET</a></li>
 												<li><a href="https://www.careeranna.com/MICAT" title="MICAT" target="_blank">MICAT</a></li>
 												<li><a href="https://www.careeranna.com/IIFT" title="IIFT" target="_blank">IIFT</a></li>	
 											</ul>
 										</div>
-										<div class="col col-md-3 col-xs-6 padding-left-none">
+										<div class="col-md-3 col-6 padding-left-none">
 												<h6>RESOURCE</h6>
 												<ul>
 												  <li><a id="ga-14df32" href="https://www.careeranna.com/courses">Test Prep</a></li>
@@ -85,7 +80,7 @@ class Footer extends Component {
 												  <li><a href="https://www.careeranna.com/SSC-CGL" title="Govt. Jobs" target="_blank">Govt. Jobs</a></li>
 												</ul>
 											</div>
-											<div class="col col-md-3 col-xs-6 padding-left-none">
+											<div class="col-md-3 col-6 padding-left-none">
 													<h6>SUPPORT</h6>
 													<ul>
 													  <li><a id="ga-14df32" href="https://www.careeranna.com/careers">Jobs</a></li>
@@ -100,10 +95,20 @@ class Footer extends Component {
 												</div>
 						</div>
 						<div className="col-md-12 row">
-						<div class="footer_copyright col-md-12 padding-none">
+						<div class="footer_copyright col-6 col-md-12 padding-none">
 									<p>© CAREERANNA Pvt. Ltd. 2019</p>
 								</div>
 						
+								<div class="col col-sm-6 col-md-12 social_icons">
+														<ul class="list-inline pull-right">
+															<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+															<li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+															<li><a href="#"><i class="fa fa-instagram"></i></a></li>
+															<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+															<li><a href="#"><i class="fa fa-youtube"></i></a></li>
+														</ul>	
+													</div>	
+							
 						</div>
 			</div>
 		</footer>

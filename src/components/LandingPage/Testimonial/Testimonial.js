@@ -187,10 +187,10 @@ class Testimonial extends Component {
             }
             </div>
             </div>
-            <div class="col-xs-12 hidden-lg test_arrow">
+            <div class="col-md-1 test_arrow">
                     
                     <button 
-                            class="next_video_right" 
+                            class="next_video_right_test" 
                            onClick={() => this.nextProperty()}
                            ><i class='fa fa-caret-right'></i></button>
                    </div> 

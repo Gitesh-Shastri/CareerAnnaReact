@@ -22,10 +22,13 @@ class Navigation extends Component {
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ml-auto">
               <li class="nav-item nav_link active">
-                <a title="Exam Prep" href="https://www.careeranna.com/courses">Exam Prep</a>
+                <a title="Courses" href="https://www.careeranna.com/courses">Courses</a>
               </li>
               <li class="nav-item nav_link">
                 <a title="Certifications" href="https://www.careeranna.com/certification" >Certifications</a>
+              </li>
+              <li class="nav-item nav_link">
+                <a title="Free Videos" href="https://www.careeranna.com/english/free/videos" >Free Videos</a>
               </li>
               <li class="nav-item nav_link">
                   <a
@@ -36,8 +39,8 @@ class Navigation extends Component {
                   </a>
                 </li>
                 <li class="nav-item nav_link">
-                  <a title="Articles" href="?php  echo base_url();?>articles">
-                    Articles
+                  <a title="Articles" href="https://www.careeranna.com/articles">
+                    News
                   </a>
                 </li>
                 <li class="nav-item">
