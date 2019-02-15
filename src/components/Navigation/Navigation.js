@@ -7,43 +7,27 @@ class Navigation extends Component {
   render() {
     return (
       <div className="Nav">
-        <nav class="navbar navbar-default">
-          <div class="container">
-            <div class="navbar-header">
-              <button
-                type="button"
-                class="navbar-toggle"
-                data-toggle="collapse"
-                data-target="#myNavbar"
-              >
-                <span class="icon-bar" />
-                <span class="icon-bar" />
-                <span class="icon-bar" />
-              </button>
-              <Link class="navbar-brand" to="/">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <Link class="navbar-brand" to="/">
                 <img
                   class="logo_image"
                   src="https://www.careeranna.com/upload/main_page_testing/LOGO-01.png"
                   id="wordmark"
                 />
                 </Link>
-            </div>
-            <div class="collapse navbar-collapse" id="myNavbar">
-              <ul class="nav navbar-nav navbar-right">
-                <li class="link_redirect">
-                  <a title="Courses" href="https://www.careeranna.com/courses">
-                    Exam Prep
-                  </a>
-                </li>
-                <li class="link_redirect">
-                  <a
-                    title="Certifications"
-                    href="https://www.careeranna.com/certification"
-                  >
-                    Certifications
-                  </a>
-                </li>
-                <li class="link_redirect">
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item nav_link active">
+                <a title="Exam Prep" href="https://www.careeranna.com/courses">Exam Prep</a>
+              </li>
+              <li class="nav-item nav_link">
+                <a title="Certifications" href="https://www.careeranna.com/certification" >Certifications</a>
+              </li>
+              <li class="nav-item nav_link">
                   <a
                     title="Free Tests"
                     href="https://www.careeranna.com/free-tests"
@@ -51,23 +35,22 @@ class Navigation extends Component {
                     Free Tests
                   </a>
                 </li>
-                <li class="link_redirect">
+                <li class="nav-item nav_link">
                   <a title="Articles" href="?php  echo base_url();?>articles">
                     Articles
                   </a>
                 </li>
-                <li>
-                  <a
+                <li class="nav-item">
+                <a
                     title="Get Started"
                     class="btn btn-info primary_btn"
                     href="https://www.careeranna.com/signup#signup"
                   >
-                    GET STARTED
+                    Sign Up
                   </a>
                 </li>
-              </ul>
-            </div>
-          </div>
+            </ul>
+          </div>  
         </nav>
       </div>
     );

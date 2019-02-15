@@ -1,5 +1,7 @@
+/*  App Styling */
 .App {
     padding: 0px;
+    color: #1E313A;;
 } 
 .row {
       margin-left: 0px !important;
@@ -13,24 +15,4 @@ a:hover,a:focus{text-decoration: none;}
 ul li{list-style: none;}
 ol,ul{padding: 0px;}
 body{font-family: 'Roboto', sans-serif;}
-.primary_btn{
-  letter-spacing: 0;
-  font-size: 14px;
-  text-transform: capitalize;
-  font-weight: 400;
-  color: #fff !important;
-  border: 0.125rem solid transparent;
-  padding: 8px 16px !important;
-  margin-top: 5px;
-}
-.owl-carousel .owl-nav .owl-prev {
-  position: absolute;
-  top: 307px;
-  left: -20px;
-}
-.owl-carousel .owl-nav .owl-next {
-  position: absolute;
-  top: 311px;
-  left: 99%;
-}
   

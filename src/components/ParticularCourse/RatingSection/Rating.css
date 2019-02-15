@@ -3,9 +3,10 @@
     padding-left: 90px !important;
     padding-top: 50px !important;
     background: #dddee133;
+    margin-top: 5% !important;
+    margin-bottom: 5% !important;
     padding-bottom: 40px !important;
-    margin-bottom: 60px !important;
-}
+    }
 .Rating .course_rating_left_wrapper h3 {
     font-size: 65px;
     font-weight: 800;
@@ -25,9 +26,9 @@
 }
 .Rating .rating_name{
     text-align: right !important;
-    font-size: 16px !important;
+    font-size: 18px !important;
     size: 17px !important;
-    padding-bottom: 10px !important;
+    padding-bottom: 20px !important;
 }
 .Rating .progress{
     height: 10px !important;
@@ -45,28 +46,30 @@
     border-radius: 20px !important;
 }
 .Rating .myBar {
+    padding: 0px !important;
+    margin: 0px !important;
     border-radius: 10px !important;
     margin-left: -14px !important;
     height: 12px;
     background-color: #1989CD;
 }
 .Rating .index{
-    width: 163px !important;
+    width: 95% !important;
 }
 .Rating .mock{
-    width: 158.24px !important;
+    width: 92% !important;
 }
 .Rating .depth{
-    width: 158.24px !important;
+    width: 92% !important;
 }
 .Rating .doubt{
-    width: 165.12px !important;
+    width: 96% !important;
 }
 .Rating .mentor{
-    width: 159.96px !important;
+    width: 93% !important;
 }
 .Rating .quality{
-    width: 165.84px !important;
+    width: 97% !important;
 }
 .Rating .percent_text{
     visibility: hidden;
@@ -75,14 +78,17 @@
     opacity: 0;
     transition: visibility 0s, opacity 0.8s linear;
     letter-spacing: 0.08rem;
-    font-weight: 700 !important;
+    font-weight: 800 !important;
     font-size: 11px !important;
 }
 .Rating .rating_progress:hover .percent_text {
     visibility: visible;
-    opacity: 1;
+    opacity: 1; 
 }
-
+.Rating .rating_progress:hover{
+    transform: scaleY(1.7);
+    transition: transform 300ms ease-in-out;
+}
 @media only screen and (max-width: 650px) {
     .Rating {
         margin-top: 20px !important;

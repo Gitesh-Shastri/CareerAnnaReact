@@ -1,9 +1,14 @@
 .course_content{font-family: 'Roboto', sans-serif;color:#293B44;padding-top: 40px;margin-top: 10px !important;margin-bottom: 60px !important;}
+.container_main {    
+    padding-left: 5% !important;
+    width: 100% !important;
+    padding-right: 5% !important;
+}
 .course_content .row{color: #fff;padding: 60px;}
 .course_content .fst_wrapper{background:#3E657A;border-radius: 5px 5px 0px 0px;}
-.course_content h2{width:100%;margin: 0px;margin-bottom: 30px;font-size: 24px;font-weight: 600;padding-bottom: 20px !important;}
+.course_content h2{width:100%;margin: 0px;margin-bottom: 30px;font-size: 36px;font-weight: 600;padding-bottom: 40px !important;}
 .course_content .content_part{padding: 0px !important;}
-.course_content .content_part ul li{min-width:250px;padding-left: 20px;margin-bottom: 20px;font-size: 16px;color: white !important;}
+.course_content .content_part ul li{min-width:250px;padding-left: 20px;margin-bottom: 20px;font-size: 20px;color: white !important;text-transform: none !important;}
 .course_content .content_part ul li {
     padding-left: 30px !important;
     margin-bottom: 20px !important;

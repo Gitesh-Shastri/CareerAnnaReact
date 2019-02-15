@@ -1,73 +1,56 @@
+/* Navbar Css */
 .navbar{min-height: 64px;}
-.navbar .container{padding: 0px;width: 100%;}
-.navbar-brand{padding: 0px;margin-left: 31px;}
-.navbar-default{
-	background-color: #fff;    
+
+.navbar{
+	background: #fff;    
 	z-index: 8000;
   box-shadow: 0px 1px 2px rgba(0,0,0,0.1);
   margin-bottom: 0px;  
   width: 100%;
-  height: 100px;
+  height: 70px;
 }
-li {
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: 600;
-    color: #1E313A !important;
-    line-height: normal;
-    font-size: 14px;
-    letter-spacing: 0.05em;
-    text-transform: uppercase;
+
+.logo_image{ 
+  margin-left: 12%;
+  width: 180px;
+  height: 60px;
 }
-.btn-info {  
-    margin-right: 25px;
-    margin-bottom: 30px;
-    background: #1989CD !important;
-    margin-top: 23px;
-    width: 169px;
-    font-size: 13px;
-    line-height: 8px !important;
-    height: 50px;
-    font-weight: 800;
-    padding: 20px 35px 20px 35px !important;
-    letter-spacing: 0.10rem;
+
+.nav-item {
+  margin-right: 3rem;
+  
 }
-.nav>li>a{
-    padding: 0px;
+
+.nav_link {
+  line-height: 6rem;
 }
-.logo_image{  
-    position: absolute;
-    width: 223px;
-    height: 70px;
-    left: 24px;
-    top: 12px;
-}
-.link_redirect{
-        margin-top: 40px;
-        padding: 0px 26px !important;
+
+.navbar .nav-item .primary_btn {
+  letter-spacing: 0.10rem;
+  font-size: 0.9rem;
+  background: #1989CD;
+  line-height: 0.5rem;
+  height: auto;
+  padding: 20px 35px 20px 25px;
+  text-transform: capitalize;
+  font-weight: 400;
+  color: #fff ;
+  border: 0.125rem solid transparent;
+  padding: 15px 16px ;
+  margin-top: 1.6rem;
 }
 @media only screen and (max-width: 650px) {
-  .navbar-default{
-    height: 50px;
-  }
-  .logo_image{
-    width: 130px;
-    height: 47px;
-    margin-top: 0px !important;
-    top: 5px;
-  }
-  .navbar-toggle{
-    margin-right: 30px !important;
-    margin-top: 12px !important;
-  }
-  #myNavbar{
+  .navbar .nav-item{
+    margin: 0px;
+    padding: 0px;
     background: #1E313A;
     color: white;
+    font-size: 1.5rem;
+    line-height: 4rem;
+    text-align: center;
+  }  
+  .navbar .nav-item .primary_btn {
+    margin: 0px;
+    line-height: 0rem;
   }
-  #myNavbar li a{
-    color: white !important;   
-  }
-  #myNavbar .btn-info{
-    margin-left: 27%;
-  }
-}    
+}

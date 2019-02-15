@@ -1,206 +1,121 @@
-.IntroSlider{
-    padding-top: 50px;
+/* Intro Slider Main */
+.IntroSlider {
+    padding: 2rem 0rem 2rem 0rem;
 }
-.IntroSlider .explore{
-    padding-left: 100px !important;
-    background: transparent;
-    border: none;
-    font-size: 14px;
-    font-weight: 800;
-}
-iframe{    
+.IntroSlider iframe {
     width: 100%;
-    height: 300px;
-    padding-top: 20px;
+    padding-left: 3.5rem;
+    height: 240px;
 }
-.IntroSlider .line{
-    margin-left: 100px !important;
-    margin-top: 10px !important;
-    margin-bottom: 0px;
-    border: 0;
-    margin-right: 97px;
-    border-top: 1px solid #1E313A;
+.IntroSlider .heading {
+    margin-top: 1.5rem;
+    font-weight: 700;
+    text-align: center;
+    font-size: 2.5rem;
 }
-.IntroSlider .video_slider{
-    padding-left: 100px !important;
-    padding-top: 20px !important;
-    padding-bottom: 40px !important;
+.IntroSlider .subheading {
+    font-weight: 400;
+    text-align: center;
+    padding-top: 1rem;
+    font-size: 1.10rem;
+    text-align: center;
+    margin-bottom: 0.5rem;
 }
-.IntroSlider .heading{
-    margin-top: 40px;
-    font-weight: 800;
-    font-size: 36px;
+.IntroSlider .subsubheading{
+    font-size: 1rem;
+    text-align: center;
+}
+.IntroSlider .dots {
+    text-align: center;
+}
+.IntroSlider .dots .dot {
+    height: 0.5rem;
+    width: 0.5rem;
+    margin-right: 0.5rem;
+    background-color: #bbb;
+    opacity: 0.3;
+    border-radius: 50%;
+    display: inline-block;
+}
+.IntroSlider .dots .active_dot {
+    background-color: #bbb;
+    opacity: 1;
+}
+.IntroSlider .choose_language {
+    padding: 2rem 0rem 1rem 0rem;
+}
+.IntroSlider .choose {
+    font-weight: 700;
+    padding-left: 3.5rem;
+    line-height: 2.5rem;
+    font-size: 1.6rem;
+    text-align: center;
     text-align: left;
-}
-.fa-chevron-circle-right, .fa-chevron-circle-left{
-    font-size: 53px;
-    margin-top: 108px;
-}
-.IntroSlider .choose_language{
-    padding-left: 100px !important;
-}
-.video_vector{
-    height: 320px;
-    width: 380px;
-    margin-left: -58px;
-}
-.subheading{
-    margin: 0px;
-    text-align: left;
-}
-.IntroSlider .upcoming_languages{
-    margin-top: 20px !important;
-    padding: 40px 40px 40px 0px !important;
-    color: white !important;
-    background: linear-gradient(90deg, #1E313A 0%, #3E657A 99.04%);
 }
 .IntroSlider .language_selector{
-    margin-right: 70px !important;
+    margin-right: 4rem;
     border: none;
+    line-height: 2.5rem;
+    font-size: 1.3rem;
     outline: none;
     background: transparent;
 }
 .IntroSlider .language_active{
-    color: #1989cd;
+    color: #fafcfd;
     font-weight: 600;
-    padding-bottom: 5px !important;
+    line-height: 2.5rem;
+    width: 8rem;
+    border-radius: 4px;
+    background: #1989cd;
+    padding-bottom: 0px !important;
     border-bottom: 2px solid #1989cd;
 }
-.IntroSlider .choose {
-    font-weight: 700;
-    font-size: 24px;
+.IntroSlider .categories{
+    margin-top: 1rem !important;
+    padding: 2rem 2rem 2rem 0rem;
+    color: white !important;
+    background: linear-gradient(90deg, #1E313A 0%, #3E657A 99.04%);
+}
+.IntroSlider .upcoming_heading h4{
+    line-height: 2rem;
+    padding-left: 2rem;
+    font-weight: 800;
+    font-size: 1.3rem;
+}
+.IntroSlider .category h4 {
+    padding-left: 2.5rem;
+    padding-right: 1rem;
+    line-height: 2rem;
     text-align: center;
-    text-align: left !important;
-}
-.IntroSlider .language{
-    text-align: left !important;
-    padding-left: 15px !important;
-    font-size: 24px !important;
-}
-.width{
-    width:20px;
-}
-.english {
-    border-bottom: 2px solid #1E313A;
-    padding-bottom: 10px !important;
-    margin-top: 60px;
     font-weight: 700;
-    font-size: 30px;
-    text-align: center;
+    font-size: 1.1rem;
 }
-.multi {
-    margin-top: 50px;
-    width: 10%;
-    display: inline-block;
+.IntroSlider .homepage_heading {
+    padding-left: 0.5rem;
 }
-.multi h4 {
-    font-size: 30px !important;
-    margin-left: 60px;
-    font-weight: 500;
-}
-.upcoming_heading{
-    text-align: left;
-    font-weight: 800 !important;
-    font-size: 16px;
-}
-
-.padding_of_arrow{
-    width: 80px;
-}
-.upcoming_heading h4{
-    margin-left: 103px;
-    font-weight: 600 !important;
-    font-size: 16px;
-}
-.upcoming_body{    font-size: 12px;
-    line-height: 16px;
-    width: 21%;
-    text-align: justify;
-    margin-top: 10px;
-}
-.width1{
-    width: 82px;
-}
-.gujrati{
-    padding-left: 13px !important; 
-}
-.introheading{
-    padding-left: 39px !important;
-}
-@media only screen and (max-width: 640px) {
-    .IntroSlider .choose_language, .choose{
-        padding-left: 8px !important;
-    }
-    .IntroSlider .language {
-        padding-left: 0px !important;
-    }
-    .IntroSlider .upcoming_languages h4{
-        text-align: center !important;
-    }
-    .IntroSlider .upcoming_languages{
-        text-align: center !important;
+@media only screen and (max-width: 650px) {
+    .IntroSlider .choose {
+        padding-left: 0px;
+        text-align: center;
     }
     .IntroSlider .language_selector {
-        margin-right: 0px !important;
-        min-width: 120px !important;
-        text-align: right !important;
+        margin-right: 0rem;
+        min-width: 25%;
     }
-    .IntroSlider .video_slider{
-        padding-left: 20px !important;
-    }
-    .IntroSlider .introheading {
-        padding-left:10px !important;
-    }
-    .IntroSlider .explore{
-        padding-left: 20px !important;
-    }
-    .IntroSlider .line{
-        margin-right: 27px !important;
-        margin-left: 20px !important;
-    }
-    .fa-chevron-circle-right, .fa-chevron-circle-left{
-        display: none;
-    }
-    .choose{
-        text-align: left;
-        padding-bottom: 30px !important;
-        font-size: 22px;
-    }
-    .english{       
-         width: 50%;
+    .IntroSlider .upcoming_heading {
         text-align: center;
-        margin-left: 12%;
-        margin-left: 25%;
     }
-    .row{
-        margin-left: 0px !important;
-        margin-right: 0px !important;
+    .IntroSlider .category{
+        min-width: 30%;
+        margin-left: 1rem;
     }
-    .width{
-        width: 0%;
-        display: none;
+    .IntroSlider .category h4{
+        text-align: left;
     }
-    .multi{
-        display: block;
-        width: 100%;
-        padding-left: 25%;
-        text-align: left !important; 
-         padding-top: 0px !important;
-        margin-top: 15px !important;  
+    .IntroSlider .categories{
+        padding-left: 1rem;
     }
-    .gujrati{
-        width: 50%;
-        text-align: center !important;
-        padding-left: 42% !important;
-        padding-left: 10% !important;
-        display: inline-block;
+    .IntroSlider .subsubsubheading{
+        text-align: center;
     }
-    .others{
-        width: 50%;
-        text-align: center !important;
-        padding-left: 42% !important;
-        display: inline-block;
-        padding-left: 10% !important;
-        
-    }
-  }
+}

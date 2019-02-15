@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './Card.css';
 
-const Card = ({review}) => {  
+const Card = ({review, current_index}) => {  
   const {reviewID,
   productID,
   rating,
@@ -11,9 +11,19 @@ const Card = ({review}) => {
   date,
   index,
   publish,
-  user_id} = review;    
+  user_id} = review;  
+  let style = {};
+  
+  const current_index_1 = current_index;
+  if(current_index_1==index) {
+      style = {opacity: "1",transform: "scale(1)", display: "block"}
+  } else  if(current_index_1>index) {
+    style = {display: "none"}    
+  } else {
+    style = {display: "block"}        
+  }
     return (
-        <div className="card" id={`card-${index}`}>
+        <div className="card" id={`card-${index}`} style={style} >
             <div class="row">
                 <div class="col-md-2 col-xs-3">
                         <div id="name_pic">

@@ -10,63 +10,22 @@ class VideoSlider extends Component {
 		this.state = {
 			videos_playlist: [
                 {
-                    image_url: "https://www.careeranna.com/thumbnail/2018-11-15-79196-thumbnail.jpg",
-                    video_url: "https://careeranna.s3.amazonaws.com/online/wp-content/uploads/2017/10/12052102/stclv3.mp4",
-                    title: "Games and Tournaments 1",
-                    duration: "11:00",
+                    video_url: "https://www.youtube.com/embed/fK0Hqhq86Bg?ecver=2",
                     index: 0,
-                    views: "1,123",
-                    date: "15/11/2018"
                 },{
-                    image_url: "https://www.careeranna.com/thumbnail/2018-11-15-87168-thumbnail.jpg",
-                    video_url: "https://careeranna.s3.amazonaws.com/online/wp-content/uploads/2017/10/12052102/stclv3.mp4",
-                    title: "Games and Tournaments 2",
-                    duration: "11:00",
+                    video_url: "https://www.youtube.com/embed/Odw8S0WExac?ecver=2",
                     index: 1,
-                    views: "1,123",
-                    date: "15/11/2018"
                 },{
-                    image_url: "https://www.careeranna.com/thumbnail/2018-12-23-67994-thumbnail.jpg",
-                    video_url: "https://careeranna.s3.amazonaws.com/online/wp-content/uploads/2017/10/12052102/stclv3.mp4",
-                    title: "Statement & Conclusion 01",
-                    duration: "11:00",
+                    video_url: "https://www.youtube.com/embed/6ussc-htZtc?ecver=2",
                     index: 2,
-                    views: "1,123",
-                    date: "15/11/2018"
                 },{
-                    image_url: "https://www.careeranna.com/thumbnail/2018-12-23-3609-thumbnail.jpg",
-                    video_url: "https://careeranna.s3.amazonaws.com/online/wp-content/uploads/2017/10/12052102/stclv3.mp4",
-                    title: "Games and Tournaments 2",
-                    duration: "11:00",
+                    video_url: "https://www.youtube.com/embed/B9-2GqctIyE?ecver=2",
                     index: 3,
-                    views: "1,123",
-                    date: "15/11/2018"
-                },{
-                    image_url: "https://www.careeranna.com/thumbnail/2018-12-23-3609-thumbnail.jpg",
-                    video_url: "https://careeranna.s3.amazonaws.com/online/wp-content/uploads/2017/10/12052102/stclv3.mp4",
-                    title: "Games and Tournaments 2",
-                    duration: "11:00",
-                    index: 4,
-                    views: "1,123",
-                    date: "15/11/2018"
-                },{
-                    image_url: "https://www.careeranna.com/thumbnail/2018-12-23-3609-thumbnail.jpg",
-                    video_url: "https://careeranna.s3.amazonaws.com/online/wp-content/uploads/2017/10/12052102/stclv3.mp4",
-                    title: "Games and Tournaments 2",
-                    duration: "11:00",
-                    index: 5,
-                    views: "1,123",
-                    date: "15/11/2018"
-                },
+                }
             ],
             video_item: {
-                image_url: "https://www.careeranna.com/thumbnail/2018-11-15-79196-thumbnail.jpg",
-                video_url: "https://careeranna.s3.amazonaws.com/online/wp-content/uploads/2017/10/12052102/stclv3.mp4",
-                title: "Games and Tournaments 1",
-                duration: "11:00",
+                video_url: "https://www.youtube.com/embed/fK0Hqhq86Bg?ecver=2",
                 index: 0,
-                views: "1,123",
-                date: "15/11/2018"
             },
             disabled: true		
 		}
@@ -93,7 +52,7 @@ class VideoSlider extends Component {
 	const {videos_playlist, video_item} = this.state;
     
     return (
-    <section class="video_slider row">
+    <section class="video_slider row" id="video">
 			<div class={`video_card_view active-video-slide-${video_item.index}`}>
 			<div class="video_view_wrapper" style={{
 				'transform': `translateX(-${video_item.index*(100/videos_playlist.length)}%)`

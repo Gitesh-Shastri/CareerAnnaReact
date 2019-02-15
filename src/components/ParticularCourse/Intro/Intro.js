@@ -1,13 +1,14 @@
 import React, { Component } from 'react';
 
 import './Intro.css';
+import Scrollchor from 'react-scrollchor';
 
 class Intro extends Component {
     
     render() {
         return(<div className="Intro">
             <div className="row">
-                <div className="col-md-5 col-xs-12 intro_left_wrapper">
+                <div className="col-md-6 col-xs-12 intro_left_wrapper">
                     <h1 className="course_intro_heading">cat<span class="course_intro_sub">2019</span></h1>
                     <h2 className="course_intro_subtitle">coaching</h2>
                     <ul class="course_intro_list">
@@ -22,10 +23,14 @@ class Intro extends Component {
 				</div>
 				<div class="intro_offer_expire">Offer expires in 3 Days</div>
                 <div class="intro_button_area">
-					<a href="#" onclick="return openLoginModelWithProductId(231);" class="blue_button">Enroll Now</a>
+					<a href="" onclick="return openLoginModelWithProductId(231);" class="blue_button">Enroll Now</a>
 				</div>
+                
+                <Scrollchor to="#video" animate={ { offset: 0, duration: 300}}>
+					<a href="" class="demo_button">Demo Video</a>
+                </Scrollchor>
                 </div>
-                <div className="col-md-7 col-xs-12 intro_right_wrapper">
+                <div className="col-md-6 col-xs-12 intro_right_wrapper">
                 <div class="video_wrapper"> 
 					<iframe src="https://www.youtube.com/embed/fK0Hqhq86Bg?wmode=transparent&amp;rel=0" frameborder="0" allowfullscreen="" id="fitvid0"></iframe>
 				</div>

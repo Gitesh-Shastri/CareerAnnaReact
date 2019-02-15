@@ -8,6 +8,10 @@
     padding-bottom: 60px !important;
     padding-top: 50px !important;
 }
+.related_courses .trendingCard{
+    width: 255px !important;
+    height: 180px !important;;
+}
 .owl-carousel .owl-dots.disabled, .owl-carousel .owl-nav.disabled{
     display: block;
 }

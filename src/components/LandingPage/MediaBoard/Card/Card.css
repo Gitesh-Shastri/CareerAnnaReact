@@ -1,0 +1,65 @@
+.mediboard_card {
+    width: 350px;
+    height: 250px;
+    padding: 1rem;
+    opacity: 0.8;
+}
+.mediboard_card.active {
+    opacity: 1;
+    background: #fff;
+    transform: scale(1.05);
+    transition: transform 750ms cubic-bezier(0.455, 0.03, 0.515, 0.955); 
+    padding: 0.5rem; 
+    -webkit-box-shadow: 0px 0px 5px 5px#ccc;
+       box-shadow: 0px 0px 5px 5px#ccc;
+    border-radius: 10px 10px;
+}
+.mediboard_card .media_pic { 
+    width: 60px;
+    height: 60px;
+    margin-right: 0.5rem;
+    border-radius: 50%; 
+    box-shadow: 4px 0px 4px rgba(31, 73, 125, 0.5);
+}
+.mediboard_card .media_pic img {
+    width: 94%;
+    height: 97%;
+    border-radius: 50%;
+}
+.mediboard_card .title {
+    padding-top: 1.2rem;
+    font-size: 0.9rem;
+    min-height: 82px;
+    text-align: justify;
+    font-weight: 700;
+}
+.mediboard_card .descrition {
+    min-width: 200px;
+    padding-top: 10px;
+    font-size: 13px;
+    min-height: 120px;
+    max-height: 120px;
+    text-align: justify;
+    line-height: 16px;
+    text-overflow: ellipsis !important;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 11;
+    word-wrap: break-word;
+    letter-spacing: 0.05rem;
+}
+.mediboard_card .readfull {
+    font-style: italic;
+    font-weight: bold;
+    padding-top: 1rem;
+    line-height: 1rem;
+    font-size: 1rem;
+   color: #1E313A;
+}
+.mediboard_card .readfull::after{
+    content: '\f101';
+    padding-left: 0.5rem;
+    font-family: fontAwesome;
+}

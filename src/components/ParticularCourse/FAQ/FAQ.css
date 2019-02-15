@@ -1,0 +1,59 @@
+.faq{
+    padding: 3% 5%;
+    background: #3E657A;
+    text-align: left !important;
+}
+.faq .faq_asked{
+    font-size: 4rem;
+    color: white;
+}
+.faq .questions {
+    color: white;
+    font-size: 4.5rem;
+    font-weight: 900;
+}
+.faq .block {
+    margin-top: 4%;
+    background: white;
+    width: 100px;
+    height: 1.5rem;
+    border-radius: 20px;
+}
+.faq .answer{
+    padding-top: 10%;
+}
+.faq .answer .ans {
+    color: white;
+    font-size: 2.6rem;
+}
+.faq .answer .full_answer {
+    padding-top: 5%;
+    color: white;
+    font-size: 2.2rem;
+}
+.faq .question {
+    cursor: pointer;
+    color: #FFFFFF;
+    opacity: 0.5;
+    transform: scale(0.9);
+    border-bottom: 2px solid #fff;
+    padding:1rem 0rem;
+    font-size: 2.2rem;
+}
+.faq .active {
+    color: white;
+    padding-bottom: 2rem !important;
+    opacity: 1;
+    transform: scale(1);
+    border-bottom: none;
+    font-style: italic;
+    font-weight: 700;
+}
+.faq .full_answer div{
+    height: 100%;
+    font-size: 2rem;
+} 
+.faq a{
+    color: blue;
+    text-decoration: underline;
+}

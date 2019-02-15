@@ -1,44 +1,89 @@
 import React, { Component } from 'react';
 import './IntroVideoSlider.css';
+import YouTube from 'react-youtube';
+import {Animated} from "react-animated-css";
+import WOW from "wowjs";
 
 class IntroSlider extends Component {
-  render() {
+
+  constructor(props) {
+    super(props);
+
+  }
+
+  onEnd = (event) => {
+    // access to player in all event handlers via event.target
+    event.target.seekTo(0);
+  }
+
+  onReady = (event) => {
+ //   event.target.playVideo();
+  }
+
+  
+  componentDidMount() {
+    const wow = new WOW.WOW();
+    wow.init();
+  }
+
+  render() { 
+
+    const opts = {
+      playerVars: { // https://developers.google.com/youtube/player_parameters
+        autoplay: 1
+      }
+    };
+
     return (
       <div className="IntroSlider">
-      <div class="row">
-        <div class="col-md-6">
-            <button class="explore pull-left"><i class="fa fa-caret-down"></i>&nbsp; explore</button>  
-            <br/>
-            <hr class="line"/>
+        <div className="row">
+        <div className="col-md-5 player_main d-none d-md-block">
+        <YouTube videoId="Kzd_J8gF9ME?autoplay=1" opts={opts} onReady={this.onReady} onEnd={this.onReady} />
         </div>
-      </div>
-      <div class="video_slider row">
-        <div class="col-md-5 hidden-xs">
-        <iframe title="video_frame" src="https://www.youtube.com/embed/Kzd_J8gF9ME" frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
-        </div>         
-        <div class="col-md-7 introheading"><h4 class="heading">A single online form to <br/>connect you to multiple<br/>banks.</h4><p class="subheading">To world class programs A single online <br/>form to.</p></div>
-      </div>
-      <div class="row choose_language">
-        <div class="col-sm-5 col-md-5 "><h4 class="choose">Choose the Language of Your Choice. </h4></div>
-        <div className="col-md-7">
-          <div className="language">
-            <button className="language_selector language_active">English</button>
-            <button className="language_selector">हिंदी</button>
-            <button className="language_selector">தமிழ்</button>
-            <button className="language_selector">తెలుగు</button>
+          {/* 
+            <iframe title="video_frame" src="https://www.youtube.com/embed/Kzd_J8gF9ME?autoplay=1" frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+          </div> */}
+          <div className="col-md-7 d-none d-sm-block homepage_heading">
+          <div className="wow zoomIn" data-wow-offset='50' data-wow-delay='2s' >
+            <h4 class="heading">Interest Based Learning Network</h4>
           </div>
-        </div>
-        </div> 
-        <div className="row upcoming_languages">
-        <div class="col-sm-5 col-md-6 upcoming_heading"><h4>upcoming languages</h4></div>   
-        <div class="row">
-        <div class="col-md-1 gujrati"><h4>ગુજરાતી</h4></div>
-            <div class="col-md-1 others"><h4>বাংলা</h4></div>
-            <div class="col-md-1 others" ><h4> മലയാളം </h4></div>
-            <div class="col-md-1 others"><h4>ਪੰਜਾਬੀ</h4></div>
-            <div class="col-md-1 others"><h4> मराठी </h4></div>
-            <div class="col-md-1 others"><h4>  ಕನ್ನಡ  </h4></div>
-      </div>
+          <div className="wow zoomIn" data-wow-offset='100' data-wow-delay='3s' >
+            <p class="subheading">P2P Learning & Knowledge sharing platform in Local Language through Videos </p>
+            <p class="subsubheading"> Providing Indians the chance to access Quality Indigenous Content</p>
+            <p class="subsubsubheading">Empowering Next 500 mm Internet Users of India</p>
+          </div>
+          </div>
+          <div className="col-md-7 d-block d-sm-none homepage_heading">
+          <div className="wow zoomIn" data-wow-offset='50' data-wow-delay='0.1s' >
+            <h4 class="heading">Interest Based Learning Network</h4>
+          </div>
+          <div className="wow zoomIn" data-wow-offset='100' data-wow-delay='0.2s' >
+            <p class="subheading">P2P Learning & Knowledge sharing platform in Local Language through Videos </p>
+            <p class="subsubheading"> Providing Indians the chance to access Quality Indigenous Content</p>
+            <p class="subsubsubheading"><i>Empowering Next 500 mm Internet Users of India</i></p>
+          </div>
+          </div>
+          
+          <div class="col-md-12 choose_language row">
+            <div class="col-sm-12 col-md-5 "><h4 class="choose">Choose the Language of Your Choice. </h4></div>
+            <div className="col-md-7 col-sm-12">
+              <div className="language">
+                <button className="language_selector language_active">English</button>
+                <button className="language_selector">हिंदी</button>
+                <button className="language_selector">தமிழ்</button>
+                <button className="language_selector">తెలుగు</button>
+              </div>
+            </div>
+          </div>
+          <div className="col-md-12 col-sm-12 row categories">
+            <div className="col-sm-12 col-md-5 upcoming_heading"><h4>Trending Catgories</h4></div>   
+              <div className="category"><h4>Politics</h4></div>
+              <div className="category"><h4>Sports</h4></div>
+              <div className="category" ><h4>Economy</h4></div>
+              <div className="category"><h4>Business</h4></div>
+              <div className="category"><h4>Technology</h4></div>
+              <div className="category"><h4>MBA</h4></div>
+           </div>
         </div>
       </div>
     );

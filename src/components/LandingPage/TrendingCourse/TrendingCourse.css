@@ -1,168 +1,138 @@
-.TrendingCourse{
-    text-align: left;
+.TrendingCourse .upcoming_languages {
+    margin-top: 1rem !important;
+    padding: 2rem 2rem 2rem 0rem !important;
+    color: white !important;
+    background: linear-gradient(90deg, #1E313A 0%, #3E657A 99.04%);
 }
-.trendingCard{
-    width: 255px;
-    height: 337px;
+.TrendingCourse .upcoming_heading h4{
+    line-height: 2rem;
+    padding-left: 2rem;
+    font-weight: 800;
+    font-size: 1.3rem;
+}
+.TrendingCourse .upcoming_languages .others h4{
+    padding-left: 2.5rem;
+    padding-right: 1.2rem;
+    line-height: 2rem;
+    text-align: center;
+    font-weight: 700;
+    font-size: 1.1rem;
+}
+.TrendingCourse .trendingCourseCard {
+    width: 30%;
+    padding: 1.5rem 0rem 1.5rem 3rem;
+    position: relative;
+    z-index: 2;
+    background: white;
+}
+.TrendingCourse .trendingCourseCardInside {
+    width: 80%;
+    height: 300px;
     background: #1989CD;
-    border-radius: 10px;
-    padding-left: 18px;
-}
-.TrendingCourse{
-    margin-left: 115px;
-    margin-top: 80px;
-}
-.trendingheading{    
-    padding-top: 30px;
-    font-family: Avenir;
-    line-height: 33px;
-    font-size: 36px;
-    color: #FFFFFF;
-    text-align: left !important;
-    font-weight: 800;
-}
-.TrendingCourse .owl-carousel .owl-nav .owl-prev {
-    position: absolute;
-    top: 294px;
-    padding: 10px !important;
-    border-radius: 10px !important;
-    background: #2487d3;
-    border: none;
-    outline: none;
-    left: -32px;
-}
-.TrendingCourse .owl-carousel .owl-nav .owl-next {
-    position: absolute;
-    top: 294px;
-    font-size: 24px !important;
+    border-radius: 10px; 
     color: white;
-    line-height: 36px !important;
-    padding: 10px !important;
-    border-radius: 10px !important;
-    background: #2487d3;
-    border: none;
-    outline: none;
-    left: 97%;
+    font-size: 1.6rem;
+    padding: 0.5rem 1rem 0.5rem 1rem;
 }
-button{
-    outline:none !important;
-}
-.trendingcourse{     
-    font-family: Avenir;
-    line-height: 22px;
-    font-size: 24px;
-    text-transform: uppercase;
-    color: #FFFFFF;
-    text-align: left !important;
-    font-weight: 300 !important;
-    padding-top: 7px;
-}
-.trending_line{
-    margin-top: 15px;
-    margin-bottom: 0px;
-    border: 0;
-        border-top-color: currentcolor;
-        border-top-style: none;
-        border-top-width: 0px;
-    border-top: 2px solid #eee;
-    width: 20%;
-    text-align: left !important;
-    margin-right: 80%;
-}
-.tresnding_off{   
-     margin-top: 100px;
-    text-align: left !important;
-    font-family: Avenir;
-    line-height: normal;
-    font-size: 22px;
-    color: #FFFFFF;
-    font-weight: 300;
-}
-.trending_special{   
-     text-align: left !important;
-    font-family: Avenir;
-    line-height: normal;
-    font-size: 14px;
-    color: #FFFFFF;
-    font-weight: 900;
-}
-.trending_expire{   
-     margin-top: 45px;
-    text-align: end !important;
-    font-family: Avenir;
-    line-height: normal;
-    font-size: 12px;
-    color: #FFFFFF;
-    margin-right: 20px;
-    font-weight: 300;
-}
-#trending_slider{
-    margin-left: 15px;
-}
-.trending_course{
-    width: 217px;
-    height: 346px;
-    display: inline-block;
-    margin-right: 20px;
-    border-radius: 10px;
-}
-.trending_course .pic {
-    height: 217px;
-    width: 100%;
-    border-radius: 10px;
-}
-.course_heading{
-    text-align: left;
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: bold;
-    line-height: normal;
-    font-size: 15px;
-    margin-top: 18px;
-}
-.course_publish{    
-    margin-top: 8px;
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
-    font-size: 10px;
-    color: #1E313A;
-}
-.course_author{   
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
-    font-size: 9px;
-    color: #1E313A;
-}
-.course_views{   
-    margin-top: 8px;
+.TrendingCourse .trendingheading {
+    font-size: 2.2rem;
     font-weight: 800;
-    font-family: Roboto;
-    font-style: normal;
+}
+.TrendingCourse .trendingsubheading {
+    font-size: 1.8rem;
+    font-weight: 200;
+}
+.TrendingCourse .trending_line {
+    width: 20%;
+    position: relative;
+    left: 0%;
+    height: 0.1rem;
+    margin-top: 0.5rem;
+    background: #fff;
+}
+.TrendingCourse .trending_off {
+    font-size: 1.2rem;
+    padding-top: 2.5rem;
+}
+.TrendingCourse .trending_off span{
+    font-size: 1.5rem;
     font-weight: 600;
-    line-height: normal;
-    font-size: 10px;
-    color: #1E313A;
 }
-.rating{
-    font-size: 10px;
+.TrendingCourse .trending_special {
+    font-size: 0.9rem;
+    padding-top: 0.2rem;
 }
-.colorBlue{color:#1989CD;}
-
+.TrendingCourse .trending_expire {
+    font-size: 0.9rem;
+    text-align: right;
+    padding-top: 2.5rem;
+}
+.TrendingCourse .course_course_list{
+    position: relative;
+    padding-top: 2rem;
+    height: 350px;
+    overflow: hidden;
+}
+.TrendingCourse .trending_playlist {
+    position: absolute;
+    display: flex;
+}
+.TrendingCourse .next_video_prev{    
+    position: relative;
+    border-radius: 50%;
+    color: white;
+    opacity: 1;
+    outline: none;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    top: -190px;
+    left: 95%;
+    padding-right: 20px;
+    padding-left: 18px;
+    background: #2c4654;
+    border: 2px solid #fff;
+}
+.TrendingCourse .next_video_right{    
+    position: relative;
+    border-radius: 50%;
+    color: white;
+    opacity: 1;
+    font-size: 25px;
+    outline: none;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    top: 47%;
+    padding-right: 20px;
+    padding-left: 20px;
+    background: #2c4654;
+    border: 2px solid #fff;
+}
+.TrendingCourse .heading_small {
+    display: none;
+}
+.TrendingCourse .arrow_small{
+    display: none;
+}
 @media only screen and (max-width: 650px) {
-    .TrendingCourse{
-        text-align: left;
-        margin-left: 1rem !important;
-        margin-top: 60px !important;
+    .TrendingCourse .upcoming_heading h4 {
+        text-align: center;
     }
-    .trendingCard{
-        margin-left: 20% !important;
+    .TrendingCourse .others {
+        padding-left: 2rem;
+        min-width: 30%;
     }
-    #trending_slider{
-        margin-top: 20px;
-        margin-left: -12px !important;
+    .TrendingCourse .next_video_right {
+        display: none;
+    }
+    .TrendingCourse .arrow_small{
+        display: block;
+    }
+    .TrendingCourse .heading_small {
+        display: block;
+        font-size: 2rem;
+        padding-top: 0.5rem;
+        letter-spacing: 0.03rem;
+        text-align: center;
+        font-weight: 600;
     }
 }

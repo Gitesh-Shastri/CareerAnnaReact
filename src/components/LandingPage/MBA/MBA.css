@@ -1,9 +1,56 @@
-.TrendingCourse{
+.MBACourses{
     text-align: left;
+    padding-top: 2rem;
+}
+
+.MBACourses .next_video_prev{       
+    position: relative;
+    border-radius: 50%;
+    color: white;
+    opacity: 1;
+    outline: none;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    top: -170px;
+    left: 88%;
+    padding-right: 25px;
+    padding-left: 20px;
+    background: #2c4654;
+    border: 2px solid #fff;
+}
+.fa.fa-angle-right {
+    font-weight: 900;
+    font-size: 24px;
+}
+.fa.fa-angle-left {
+    font-weight: 900;
+    font-size: 24px;
+}
+.MBACourses .next_video_right{    
+    position: relative;
+    border-radius: 50%;
+    color: white;
+    opacity: 1;
+    font-size: 25px;
+    outline: none;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    top: 42%;
+    padding-right: 20px;
+    padding-left: 20px;
+    background: #2c4654;
+    border: 2px solid #fff;
 }
 .MBACard{
-    width: 255px;
-    height: 337px;
+    width: 30%;
+    padding: 1.5rem 0rem 1.5rem 3rem;
+    position: relative;
+    z-index: 2;
+    background: white;
+}
+.MBACourseCardInside{
+    width: 80%;
+    height: 300px;
     background: #1d3139;
     border-radius: 10px;
     padding-left: 18px;
@@ -11,12 +58,12 @@
 .rupees{
     background: #1989CD;
     width: 95.72px;
-    height: 102px;
+    height: 80px;
     padding-left: 25px;
-    padding-top: 20px;
+    padding-top: 12px;
     position: absolute;
-    right: 0;
-    top: 0;
+    right: 67px;
+    top: 24px;
     border-radius: 0px 10px;
 }
 .rupeePic{
@@ -24,15 +71,11 @@
 }
 .ticker {
     width: 20px;position: absolute;
-    top: 55px;
+    top: 47px;
     right: 13px;
 }
-.TrendingCourse{
-    margin-left: 70px;
-    margin-top: 120px;
-}
 .mbaheading{    
-    padding-top: 50px;
+    padding-top: 10px;
     font-family: Avenir;
     line-height: 33px;
     font-size: 32px;
@@ -41,6 +84,23 @@
     font-weight: 800;
 }
 
+.MBACourses .trending_off {
+    font-size: 1.2rem;
+    padding-top: 2.5rem;
+    color: white;
+}
+.MBACourses .trending_off span{
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+.MBACourses .trending_special {
+    font-size: 0.9rem;
+}
+.MBACourses .trending_expire {
+    font-size: 0.9rem;
+    text-align: right;
+    padding-top: 2.5rem;
+}
 .trendingcourse{     
     font-family: Avenir;
     line-height: 22px;
@@ -96,9 +156,8 @@
 }
 .trending_course{
     width: 223px;
-    height: 346px;
+    height: 270px;
     display: inline-block;
-    margin-right: 20px;
     border-radius: 10px;
 }
 .trending_course .pic {
@@ -148,6 +207,24 @@
 }
 .colorBlue{color:#1989CD;}
 
+
+.MBACourses .course_course_list{
+    position: relative;
+    padding-top: 2rem;
+    overflow: hidden;
+    height: 350px;
+}
+.MBACourses .trending_playlist {
+    position: absolute;
+    display: flex;
+}
+.MBACourses .heading_small {
+    display: none;
+}
+.MBACourses .arrow_small {
+    display: none;
+}
+
 @media only screen and (max-width: 650px) {
     .MBACard{
         margin-left: 20% !important;
@@ -176,4 +253,18 @@
         padding-top: 10px !important;
         margin-left: 20%;
     }
+    .MBACourses .heading_small {
+        display: block;
+        font-size: 2rem;
+        padding-top: 0.5rem;
+        letter-spacing: 0.03rem;
+        text-align: center;
+        font-weight: 600;
+    }
+.MBACourses .arrow_small {
+    display: block;
+}
+.arrow_small {
+    height: 2rem;
+}
 }

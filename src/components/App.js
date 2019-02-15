@@ -5,19 +5,27 @@ import {BrowserRouter} from 'react-router-dom';
 import {Route} from 'react-router-dom';
 
 import Navigation from './Navigation/Navigation';
-import Footer from './Footer/Footer';
-import ParticularCourse from './ParticularCourse/ParticularCourse';
 import LandingPage from './LandingPage/LandingPage';
 
+import Footer from './Footer/Footer';
+/*
+import ParticularCourse from './ParticularCourse/ParticularCourse';
+import CertificationCourse from './CertificationCourse/CertificationCourse';
+ */
 class App extends Component {
   render() {
     return (
       <BrowserRouter>
       <div className="App">
-        <Navigation />
-          <Route path="/" exact component={ LandingPage } />
+      <Navigation />
+      <LandingPage />
+      <Footer />
+      {/* 
           <Route path="/CareerAnnaContent" exact component={ ParticularCourse } />
-        <Footer />
+          <Route path="/CertificationCourse" exact component={ CertificationCourse } /> 
+          <Route path="*" component={ LandingPage } /> 
+          <LandingPage />
+        */}
       </div>
       </BrowserRouter>
     );

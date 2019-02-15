@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './TrendingCourse.css';
 
-import OwlCarousel from 'react-owl-carousel';
+import Card from './Card/Card';
 
 class TrendingCourse extends Component {
 
@@ -11,38 +11,28 @@ class TrendingCourse extends Component {
                 pic_url: "https://www.careeranna.com/uploads/product_images/Course_Images/2018/05/1527062433cat_.jpeg",
                 title:"CAT 2019 Coaching",
                 publish: "23rd May, 2019",
-                leaners: "1552+ Leaners",
+                leaners: "1552+ Learners",
                 index: 0,
                 ratings: "4.89",
                 key:"1",
                 url: "https://www.careeranna.com/CAT-2019-Coaching"
             },
             {
-                pic_url: "https://www.careeranna.com/uploads/product_images/Course_Images/2018/01/1517391168studying-ahead-1421056.jpg",
-                title:"CAT 2018 Coaching",
-                publish: "17th Nov, 2017",
-                leaners: "1298+ Leaners",
-                ratings: "4.89",
-                index: 1,
-                key:"2",
-                url: "https://www.careeranna.com/CAT-2018-Coaching"
-            },
-            {
                 pic_url: "https://www.careeranna.com/uploads/product_images/Course_Images/2018/08/1534844920Data_science_with_python.jpg",
                 title:"Python Programming Online Course",
                 publish: "23rd May, 2019",
-                leaners: "4603+ Leaners",
+                leaners: "4603+ Learners",
                 ratings: "4.9",
-                index: 2,
+                index: 1,
                 key:"3",
                 url: "https://www.careeranna.com/Python-Programming-Online-Course"
             },{
                 pic_url: "https://www.careeranna.com/uploads/product_images/Course_Images/2018/08/15336800721527172691img6.jpg",
                 title:"Data Science with Python",
                 publish: "10th Sep, 2017",
-                leaners: "1258+ Leaners",
+                leaners: "1258+ Learners",
                 ratings: "4.9",
-                index: 3,
+                index: 2,
                 key:"4",
                 url: "https://www.careeranna.com/Data-Science-with-Python"
             },{index: 0,
@@ -50,18 +40,18 @@ class TrendingCourse extends Component {
                 pic_url: "https://www.careeranna.com/uploads/product_images/Course_Images/2018/07/15324338871529734481Image_abhishek.jpg",
                 title:"Certified Business Analyst With Excel",
                 publish: "7th Sep, 2017",
-                index: 4,
-                leaners: "3960+ Leaners",
+                index: 3,
+                leaners: "3960+ Learners",
                 ratings: "4.89",
                 key:"5",
                 url: "https://www.careeranna.com/Certified-Business-Analyst-With-Excel"
             },
             {
                 pic_url: "https://www.careeranna.com/uploads/product_images/Course_Images/2019/01/1548055203tissnet.jpg",
-                index: 5,
+                index: 4,
                 title: "TISSNET Coaching Class 2020",
                 publish: "21st Jan, 2019",
-                leaners: "8350+ Leaners",
+                leaners: "8350+ Learners",
                 ratings: "4.95",
                 key:"6",
                 url: "https://www.careeranna.com/TISSNET-Coaching-Class-2020"
@@ -72,7 +62,7 @@ class TrendingCourse extends Component {
             title:"CAT 2019 Coaching",
             publish: "23rd May, 2019",
             index: 0,
-            leaners: "1552+ Leaners",
+            leaners: "1552+ Learners",
             ratings: "4.89",
             key:"1",
             url: "https://www.careeranna.com/CAT-2019-Coaching"
@@ -101,29 +91,7 @@ class TrendingCourse extends Component {
     
     const course = this.state.course;
 
-    const courses = this.state.courses.map(course => {
-        return <div class="items trending_course">
-        <a href={course.url}>
-        <img src={course.pic_url} class="pic" alt="" />
-        <div class="course_heading">
-            {course.title}
-        </div>
-        <div class="course_views">
-        <i class="fa fa-users" aria-hidden="true"></i>  {course.leaners}
-        </div>
-        <div class="rating">
-            <div class="rating_star">{course.ratings} &nbsp;
-                <span class="fa fa-star colorBlue"></span>
-                <span class="fa fa-star colorBlue"></span>
-                <span class="fa fa-star colorBlue"></span>
-                <span class="fa fa-star colorBlue"></span> 
-                <span class="fa fa-star"></span>       
-                <span></span>
-            </div>
-        </div>
-        </a>
-    </div>
-    });  
+    const courses = this.state.courses;  
     const course_item = <div class="items trending_course">
     <a href={this.state.course.url}>
     <img src={this.state.course.pic_url} class="pic" alt="" />
@@ -147,48 +115,75 @@ class TrendingCourse extends Component {
 </div>
     return (
       <div class="TrendingCourse">
-        <div class="row">
-            <div class="col-md-4 trendingCard">
-                <div className="trendingheading">
-                    Trending
-                </div>
-                <div className="trendingcourse">
-                    Courses
-                </div>
-                <hr class="trending_line"/>
-                <div class="tresnding_off">
-                    15% off
-                </div>
-                <div class="trending_special">
-                Specialised Courses.
-                </div>
-                <div class="trending_expire">
-                *Offer expires in 3 Days.
-                </div>
-            </div>
-                <div class="col-md-9 hidden-xs" id="trending_slider">
-                <OwlCarousel ref="gallery">
-                    {courses}
-                </OwlCarousel>
-            </div>
-            <div class="col-xs-12 small_mba_card hidden-lg">
-                {course_item}
-            </div>
-            <div class="col-xs-12 hidden-lg mba_arrow">
-                    <button 
-                    class="next_video_left video_prev"
-                    onClick={() => this.prevProperty()} 
-                    disabled={course.index==0}
-                    hidden={course.index==0}
-                ><i class='fa fa-caret-left'></i></button>
-             <button 
-                     class="next_video_right video_next" 
-                    onClick={() => this.nextProperty()}
-                    disabled={course.index==5}
-                    hidden={course.index==5}
-                    ><i class='fa fa-caret-right'></i></button>
-            </div> 
+        <div className="row upcoming_languages">
+        <div class="col-sm-5 col-md-5 upcoming_heading"><h4>upcoming languages</h4></div> 
+            <div class="others"><h4>ગુજરાતી</h4></div>
+            <div class="others"><h4>বাংলা</h4></div>
+            <div class="others" ><h4> മലയാളം </h4></div>
+            <div class="others"><h4>ਪੰਜਾਬੀ</h4></div>
+            <div class="others"><h4> मराठी </h4></div>
+            <div class="others"><h4>  ಕನ್ನಡ  </h4></div>
         </div>
+        <div className="col col-sm-12 heading_small">
+                Trending Course
+      </div>
+        <div class="row">
+            <div class="trendingCourseCard  d-none d-md-block">
+                <div className="trendingCourseCardInside">
+                    <div className="trendingheading">
+                        Trending
+                    </div>
+                    <div className="trendingsubheading">
+                        Courses
+                    </div>
+                    <hr class="trending_line"/>
+                    <div class="trending_off">
+                        Upto <span>15% off</span>
+                    </div>
+                    <div class="trending_special">
+                    Specialised Courses.
+                    </div>
+                    <div class="trending_expire">
+                    *Offer expires in 3 Days.
+                    </div> <button 
+					      class="next_video_prev"
+                onClick={() => this.prevProperty()} 
+                disabled={course.index==0}
+                hidden={course.index==0}><i class='fa fa-angle-left'></i>
+              </button>
+                </div>
+            </div>
+                <div class="col col-sm-12 col-md-7 course_course_list">
+                <div className="trending_playlist" style={{
+				'transform': `translateX(-${course.index*(100/courses.length)}%)`
+			}}> {
+                courses.map((particular_course, i) => 
+                <Card key={i} course = {particular_course} current_index = {course.index}/>)
+            }
+            </div>
+            </div>  
+            <div className="col-md-1">
+          <button 
+			 		class="next_video_right"
+					onClick={() => this.nextProperty()} 
+					disabled={course.index==courses.length-1}
+					hidden={course.index==courses.length-1}
+        ><i class='fa fa-angle-right'></i></button>
+          </div>
+        </div><div className="col col-sm-12 arrow_small">
+          <button 
+					      class="next_video_prev_small"
+                onClick={() => this.prevProperty()} 
+                disabled={course.index==0}
+                hidden={course.index==0}><i class='fa fa-angle-left'></i>
+              </button>
+          <button 
+			 		class="next_video_right_small pull-right"
+					onClick={() => this.nextProperty()} 
+					disabled={course.index==courses.length-1}
+					hidden={course.index==courses.length-1}
+        ><i class='fa fa-angle-right'></i></button>     
+          </div>
       </div>
     );
   }

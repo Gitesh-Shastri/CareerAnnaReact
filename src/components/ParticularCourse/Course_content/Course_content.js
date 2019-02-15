@@ -7,7 +7,7 @@ class Course_Content extends Component {
   render() {
     return (
     <section class="course_content">
-	<div class="container">
+	<div class="container_main">
 		<div class="row fst_wrapper">
 			<h2><span class="course_grey">COURSE</span>CONTENT</h2>
 			<div class="col col-md-6 col-xs-12 content_part left_wrapper">

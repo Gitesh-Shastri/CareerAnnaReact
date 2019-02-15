@@ -1,0 +1,61 @@
+.CertificationIntro {
+    padding: 4%  0px 0px 5%;
+    margin: 0px !important;
+    text-align: left !important;
+}
+.CertificationIntro .title {
+    font-weight: 500;
+    line-height: 25px;
+    font-size: 26px;
+}
+.CertificationIntro .title span{
+    font-weight: 900;
+    line-height: 42px;
+    font-size: 42px;
+}
+.CertificationIntro .description {
+    padding-top: 40px;
+}
+.CertificationIntro .description ul li{
+    padding-top: 20px;
+    font-weight: 200 !important;
+    line-height: 24px;
+    text-transform: none;
+    font-size: 20px;    
+}
+.CertificationIntro .description ul li::before{
+    content: '\f058';
+    font-family: FontAwesome;
+    font-size: 20px;    
+    margin-right: 10px;
+}
+.CertificationIntro .price {
+    padding-top: 48px;
+}
+.CertificationIntro .original_price {
+    display: inline-block;
+    font-size: 28px;
+    text-decoration-line: line-through;
+    opacity: 0.8;
+    padding-right: 15px;
+}
+.CertificationIntro .discounted_price {
+    display: inline-block;
+    font-size: 28px;
+    font-weight: 600;
+}
+.CertificationIntro .intro_offer_expire {
+    padding-top: 10px !important;
+    font-size: 22px !important;
+    padding-bottom: 25px !important;
+}
+.CertificationIntro .intro_button_area {
+    transition:0.3s ease;
+    color:#fff;
+    background:#1989CD;
+    font-weight:bold;
+    padding:15px 50px;
+    display:inline-block;
+    border-radius:5px;
+    font-size:24px;
+}

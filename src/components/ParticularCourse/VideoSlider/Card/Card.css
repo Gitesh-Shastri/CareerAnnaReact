@@ -1,9 +1,8 @@
-.video_player_card {
-    width: 262px !important;
-    height: 160px !important;
+.video_player_card {        
+    width: 260px !important;
     text-align: left !important;
     font-size: 13px;
-    color:  #838a90;
+    color: #838a90;
 }
 .video_player_card .video_frame {
     margin: 0px !important;

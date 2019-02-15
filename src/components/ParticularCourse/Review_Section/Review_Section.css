@@ -1,8 +1,30 @@
 .review_sec{
-    padding-top: 40px !important;
+    padding-top: 2% !important;
+    padding-left: 4% !important;
 }
-.left_wrapper{
+.review_sec .review_tab {
+    height: 254px;
+    width: 265px;
     padding: 0px !important;
+    position: relative;
+    z-index: 1;
+    background: #1989CD;
+    border-radius: 0px 10px 0px 0px;
+}
+.review_sec .review_title {     
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 141px;
+    text-align: left;
+    vertical-align: text-bottom;
+    font-size: 18px !important;
+    font-weight: 700;
+    width: 141px;
+    background: white;
+    vertical-align: bottom !important;
+    padding-top: 20px !important;
+    border-radius: 0px 10px 0px 0px;
 }
 .card_view{
     position:  relative;
@@ -26,7 +48,7 @@
     z-index: 999;
     height: 300px;
     background: white;
-}
+}/* 
 .card_view.active-slide-0 #card-0{
     opacity: 1;
     transform: scale(1);
@@ -222,16 +244,29 @@
 .card_view.active-slide-48 #card-48{
     opacity: 1;
     transform: scale(1);
-}
+} */
 body{
     overflow-x: hidden !important;
 }
+.next_slide_right {
+    background: transparent !important;  
+}
+.next_slide_right .fa{
+    color: #1e313a;
+}
+.next_slide_left .fa{
+    color: #1e313a;
+}
+.next_slide_left {
+    background: transparent !important;  
+    left: 22% !important;
+}
 .user_view_wrapper .card {
     flex: 1;
-    min-width: 300px !important;
+    min-width: 330px !important;
     opacity: 0.8;
     transform: scale(0.9);
-    transition: opacity 300ms linear, transform 600ms cubic-bezier(0.455, 0.03, 0.515, 0.955);
+    transition: all 600ms cubic-bezier(0.455, 0.03, 0.515, 0.955);
 }
 .next_slide_left, .next_slide_right{
     border: none !important;
@@ -244,7 +279,7 @@ body{
     padding-right: 15px !important;
     position: absolute;
     top: -45px;
-    left: 34% !important;
+    left: 22% !important;
 }
 .next_slide_right{
     color: white;
@@ -263,7 +298,7 @@ body{
         opacity: 0.2;
         width: 319px;
         border-radius: 10px;
-        height: 280px;
+        height: 255px;
         background: #1989CD;
         position: absolute;
         top: 0;

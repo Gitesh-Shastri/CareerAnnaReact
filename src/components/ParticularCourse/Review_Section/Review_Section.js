@@ -15,9 +15,9 @@ class Review_Section extends Component {
 	}
 
 	componentDidMount = () => {
-			 axios.get('https://www.careeranna.com/api/react-api/fetchCourseReview.php?id=216')
+			 axios.get('https://www.careeranna.com/webiste-api/fetchCourseReview.php?id=216')
 			.then(response => {
-			 	console.log(response.data);
+			 	console.log(response);
 			 	this.setState({reviews: response.data, review: response.data[0]});
 			}); 
 	}
@@ -44,21 +44,18 @@ class Review_Section extends Component {
 
     return (<section class="review_sec">
 		<div class="row">
-			<div class="col-md-4 col-xs-12 left_wrapper">
-				<div class="review_card_left">
-				<div class="hr_line"></div>
-				<h3>WHAT STUDENTS THNIK</h3>
-				<h2>About Us.</h2>
-				<p>Fund your way to an extensive list of colleges that share your passion with you.</p>
-			</div>
+			<div class="col-md-3 col-xs-12">
+				<div class="review_tab">
+						<div class="review_title">
+							What Students Say About Us
+						</div>
+				</div>
 			</div>
 			<div class={`col-md-8 card_view active-slide-${review.index}`}>
-			<div class="user_view_wrapper" style={{
-				'transform': `translateX(-${review.index*(100/reviews.length)}%)`
-			}}>
+			<div class="user_view_wrapper" >
 					{
-						reviews.map((review, i) => 
-						<Card key={i} review = {review}/>)
+						reviews.map((review_item, i) => 
+						<Card key={i} review = {review_item} current_index={review.index}/>)
 					}
 				</div>
 			</div>

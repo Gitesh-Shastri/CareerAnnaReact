@@ -8,7 +8,7 @@ class Rating extends Component {
         return(<div className="Rating">
             <div className="row">
                 <div className="col-md-3 col-xs-12 course_rating_left_wrapper">
-                    <h3>4.8<span class="rating_off_5">out of 5</span></h3>
+                    <h3>4.8<span class="rating_off_5"> / 5</span></h3>
 			    	<h4>ratings</h4>
 				    <h5>based on 1,020 students</h5>
                 </div>

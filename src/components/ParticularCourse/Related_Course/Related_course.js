@@ -158,14 +158,14 @@ const course1 = this.state.course;
 
         <section class="related_courses">
                 <div class="row">
-                    <div class="col-md-3 col-xs-12 left_wrapper_small left_wrapper">
-                        <h2>RELATED</h2>
-                        <h3>COURSES</h3>
-                        <p>Fund your way to an extensive list of colleges that share your <b>passion with you</b>. Have <b>documentation worries </b>taken off your plate.Have documentation <b>worries</b> taken off your plate.
-                        </p>
-                        <div class="other_text"><b>15% off<b> on </b>Specialised Courses</b>.</div> 
-                        <div class="offer_expire"><sup>*</sup>Offer expires in 3 Days</div>
-                    </div>
+            <div class="col-md-4 trendingCard">
+                <div className="trendingheading">
+                    Related
+                </div>
+                <div className="trendingcourse">
+                    Courses
+                </div>
+            </div>
                     <div class="col-md-9 col-xs-12 owl_carousel right_wrapper">
                         <OwlCarousel ref="gallery">
                             {coursespilce}

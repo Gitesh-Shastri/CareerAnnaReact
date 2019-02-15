@@ -1,110 +1,96 @@
-.testimonialCard{
-    height: 254px;
-    width: 255px;
-    background: #1989CD;
-    border-radius: 0px 10px 0px 0px;
+.TestimonialReviews {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
 }
-.testimonial_course{
-    margin-top: 36px;
-}
-.testimonialtext{
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    height: 141px;
-    width: 141px;
+.TestimonialReviews .TestimonialReviewsCard {
+    width: 30%;
+    padding: 1.5rem 0rem 1.5rem 3rem;
+    position: relative;
+    z-index: 2;
     background: white;
 }
-.testimonialheading{ 
-    margin-top: 38px;
-    font-size: 18px;
-    font-weight: 800;
+.TestimonialReviews .TestimonialReviewsInside{
+    width: 80%;
+    height: 300px;
+    background: #1989CD;
+    border-radius: 0px 10px 0px 0px;
+    padding-left: 18px;
 }
-.testimonialheading2{
-    font-size: 18px;
-    font-weight: 800;
+.arrow_row{
+    height: 3rem;
 }
-.fa-caret-right, .fa-caret-left{    
-    margin-left: 4px;
-    font-size: 25px;
+.TestimonialReviews .review_box {
+    position: absolute;
+    bottom: 3rem;
+    height: 200px;
+    border-radius:0px 10px 0px 0px;
+    background: white;
+    width: 150px;
+    padding-top: 1rem;
+    left: 3rem;
 }
-.user_name{
-    min-height: 40px;
-    font-size: 14px;
-    font-weight: 800;
-    letter-spacing: 0.07rem;
+.TestimonialReviews .reviewheading {
+    font-size: 1.7rem;
+    font-weight: 700;
+    padding-top: 3rem;
 }
-.profession{
-    font-size: 10px;
-    font-weight: 500;
-    min-height: 30px;
-    letter-spacing: 0.07rem;
+.TestimonialReviews .reviewsubheading {
+    font-size: 1.5rem;
+    font-weight: 700;
 }
-.fa-star{
-    margin-right: 7px;
+.TestimonialReviews .review_play_list{
+    position: relative;
+    overflow: hidden;
+    padding-top: 1.5rem;
+    height: 350px;
 }
-.review{
-    padding-top: 30px;
-    min-height: 114px;
-    font-size: 9px;
-    letter-spacing: 0.05rem;
+.TestimonialReviews .review_playlist{
+    position: absolute;
+    display: flex;
 }
-#testimonial_slider{
-        /* margin-left: 37px; */
-        padding: 0px !important;
-        margin-right: 10px !important;
+.TestimonialReviews .user_comment {
+    text-align: justify !important;
 }
-.review_created{
-    margin-top: 10px;
-    font-size: 10px;
+.TestimonialReviews .next_video_prev {
+    position: relative;
+    left: 280px;
+    top: -40px;
+    background: transparent;
+    border: none;
+    outline: none;
 }
-@media only screen and (max-width: 750px) {
-    #testimonial_slider{
-        margin-left: -10px !important;
+.TestimonialReviews .next_video_prev .fa {
+    font-size: 2rem;
+}
+.TestimonialReviews .next_video_right {
+    position: relative;
+    top: 282px;
+    font-size: 2rem;
+    background: transparent;
+    border: none;
+    outline: none;
+}
+.TestimonialReviews .review_playlist{
+    transition: transform 750ms cubic-bezier(0.455, 0.03, 0.515, 0.955); 
+}
+.TestimonialReviews .arrow_small{
+    display: none;
+}
+.TestimonialReviews .heading_small {
+    display: none;
+}
+@media only screen and (max-width: 650px) {
+
+    .TestimonialReviews .heading_small {
+        display: block;
+        font-size: 2rem;
+        padding-top: 0.5rem;
+        letter-spacing: 0.03rem;
+        text-align: center;
+        font-weight: 600;
     }
-    .testimonialCard{
-        margin-left: 20% !important;
-    }
-    .img-responsive{
-        width: 120px !important;
-        padding-bottom: 20px !important;
-    }
-    .textimonial_user{
-        position: absolute;
-        overflow-x: hidden;
-    }
-    .testimonial_small_slider {
-        position: relative !important;
-        display: flex;
-    }
-    .user_name {
-        min-height: 40px;
-        font-size: 14px;
-        font-weight: 800;
-        letter-spacing: 0.07rem;
-        min-width: 150px !important;
-        min-width: 250px !important;
-    }
-    .testimonial_arrow .next_video_left{
-        border-radius: 10px !important;
-        background: #2487d3 !important;
-        border: none;
-        outline: none;
-        margin-top: 400px;
-        color: white !important;
-        padding: 10px !important;
-        font-size: 20px !important;
-        float: left;
-    }
-    .testimonial_arrow .next_video_right{
-        float: right;
-        margin-top: 400px;
-        color: white !important;
-        border-radius: 10px !important;
-        border: none;
-        outline: none;
-        background: #2487d3 !important;
-        padding: 10px !important;
-        font-size: 20px !important;
-    }
+.TestimonialReviews .arrow_small{
+    display: block;
+    height: 2rem;
+}
 }

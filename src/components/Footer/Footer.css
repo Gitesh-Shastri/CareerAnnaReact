@@ -1,7 +1,8 @@
 .footer{
     background: #1d3139;
-    padding-top: 62px;
-    padding-left: 90px;  
+    padding-top: 1.5rem;
+    margin-top: 1.5rem;
+    padding-left: 1.5rem;  
     color: white;
     text-align: left !important;
   }
@@ -10,12 +11,16 @@
     font-family: Roboto;
     font-style: normal;
     font-weight: 900;
-    line-height: normal;
-    padding-bottom: 25px;    
+    line-height: normal;    
   }
   .footer_left_text{
     font-size: 14px;
-    padding-bottom: 90px;
+    text-align: justify;
+    padding-bottom: 4rem;
+    padding-top: 1rem;
+  }
+  .list-inline li {
+    display: inline;
   }
   .footer_left_links ul>li>a{
     color: white;
@@ -23,63 +28,59 @@
     font-size: 12px;
   }
   .social_icons{
-    padding-top: 50px;
     padding-left: 0px !important;
+    margin-left: 1rem;
+    padding-right: 0px !important;
   }
   .social_icons ul>li>a{
     padding-left: 0px !important; 
     font-size: 15px;
-    margin-right: 15px;
+    margin-right: 1.4rem;
   }
   .coprwrite_link{
     text-align: right;
-    padding-right: 95px;
   }
   .coprwrite_link ul>li>a{
     font-size: 11px;
     color: white !important;
   }
-  .subs_form{
-    padding-top: 105px;
-  }
   .subs_form h4{
-  
   font-family: Roboto;
   font-style: normal;
   font-weight: 600;
   line-height: normal;
-  font-size: 25px;
+  font-size: 1.4rem;
+  padding-top: 2rem;
   margin-bottom: 0px !important;
-  padding-bottom: 0px !important;
+  padding-bottom: 2rem !important;
   }
   .subs_form h5{
-    padding: 0px !important;
-    margin: 0px !important;
+    padding: 0px;
+    padding-bottom: 0.6rem;
+    margin: 0px;
   font-family: Roboto;
   font-style: normal;
   font-weight: normal;
   line-height: normal;
   font-size: 18px;
   }
-  form{
-    padding-top: 25px;
+  .footer .form{
+    padding-top: 2rem;
   }
   .subs_form form input{
-    height: 60px;
+    height: 2.7rem;
   }
   .footer .subs_form form button{
-    padding: 14px 25px;
-    margin-left: 26px;
-    font-size: 20px;
+    font-size: 1.1rem;
     font-weight: 600;
+    padding: 0.6rem 1.5rem 0.6rem 1.5rem;
+    margin-left: 1rem;
   }
   .footer_copyright{
-    padding-top: 200px !important;
-    padding-right: 77px;
     text-align: right !important;
   }
   .form-control{
-    text-align: center !important;
+    text-align: left !important;
   }
   @media only screen and (max-width: 650px) {
     .footer{
@@ -111,7 +112,7 @@
         display: none;
     }
     .subs_form{
-        padding-top: 50px;
+        padding-top: 1rem;
         margin-left: 27px;
         font-size: 15px !important;
         margin-right: 27px !important;
@@ -131,6 +132,10 @@
     }
     .footer_copyright {
         padding-top: 40px !important;
+    }
+    .footer_left_links .padding-left-none {
+      padding-left: 0px !important;
+      padding-top: 1rem;
     }
   }
   
