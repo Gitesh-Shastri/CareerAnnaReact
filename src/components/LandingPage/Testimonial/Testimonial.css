@@ -3,14 +3,14 @@
     padding-bottom: 2rem;
 }
 .TestimonialReviews .TestimonialReviewsCard {
-    width: 30%;
+    width: 328px;
     padding: 1.5rem 0rem 1.5rem 3rem;
     position: relative;
     z-index: 2;
     background: white;
 }
 .TestimonialReviews .TestimonialReviewsInside{
-    width: 80%;
+    width: 95%;
     height: 300px;
     background: #1989CD;
     border-radius: 0px 10px 0px 0px;
@@ -18,12 +18,15 @@
 }
 .arrow_row{
     height: 3rem;
+    position: relative;
+    z-index: 3;
+    width: 50px;
 }
 .TestimonialReviews .review_box {
     position: absolute;
-    bottom: 3rem;
-    height: 200px;
-    border-radius:0px 10px 0px 0px;
+    bottom: 0rem;
+    height: 225px;
+    border-radius: 0px 10px 0px 0px;
     background: white;
     width: 150px;
     padding-top: 1rem;
@@ -40,8 +43,11 @@
 }
 .TestimonialReviews .review_play_list{
     position: relative;
-    overflow: hidden;
+    overflow-y: hidden;
+    overflow-x: auto;
     padding-top: 1.5rem;
+    padding-left: 1rem;
+    width: 62%;
     height: 350px;
 }
 .TestimonialReviews .review_playlist{
@@ -70,6 +76,16 @@
     border: none;
     outline: none;
 }
+.TestimonialReviews .arrow_row .review_prev {
+    border: none;
+    outline: none;
+    position: relative;
+    top: 290px;
+    background: transparent
+}
+.TestimonialReviews .arrow_row .review_prev .fa{
+    font-size: 2rem;
+}
 .TestimonialReviews .review_playlist{
     transition: transform 750ms cubic-bezier(0.455, 0.03, 0.515, 0.955); 
 }
@@ -97,8 +113,14 @@
         text-align: center;
         font-weight: 600;
     }
+    .TestimonialReviews .review_play_list {
+        width: 100%;
+    }
     .TestimonialReviews .arrow_small{
         display: block;
         height: 2rem;
+    }
+    .TestimonialReviews .arrow_small .fa{
+        font-size: 2rem;
     }
 }

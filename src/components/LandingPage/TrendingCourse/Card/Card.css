@@ -10,17 +10,13 @@
  }
  .Coursecard:hover{
      transform: scale(1.1);
-     transition: transform 750ms cubic-bezier(0.455, 0.03, 0.515, 0.955); 
-     padding: 0.5rem; 
+     transition: transform 400ms cubic-bezier(0.455, 0.03, 0.515, 0.955);  
      -webkit-box-shadow: 0px 0px 2px 2px#ccc;
         box-shadow: 0px 0px 2px 2px#ccc;
      border-radius: 10px 10px;
 }
 .colorBlue {
     color: #1989CD;
-}
-a:hover{
-    color: #1E313A;
 }
 .Coursecard .course_heading {
     font-size: 1rem;

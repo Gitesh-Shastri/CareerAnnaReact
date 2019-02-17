@@ -19,9 +19,9 @@
       manifest.json provides metadata used when your web app is added to the
       homescreen on Android. See https://developers.google.com/web/fundamentals/web-app-manifest/
     -->
-	<link rel="stylesheet" href="%PUBLIC_URL%/bootstrap.min.css">
+	<link rel="stylesheet" href="https://www.careeranna.com/home/bootstrap.min.css">
 	<link href="https://fonts.googleapis.com/css?family=Roboto:400,700,900" rel="stylesheet">
-	<link href="%PUBLIC_URL%/owl.carousel.min.css" rel="stylesheet">
+	<link href="https://www.careeranna.com/home/owl.carousel.min.css" rel="stylesheet">
 	<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css">
@@ -50,51 +50,10 @@
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
 
-<script src="%PUBLIC_URL%/jquery-3.3.1.min.js"></script>
-<script src="%PUBLIC_URL%/bootstrap.min.js"></script>
-<script src="%PUBLIC_URL%/owl.carousel.min.js"></script>
+<script src="https://www.careeranna.com/home/jquery-3.3.1.min.js"></script>
+<script src="https://www.careeranna.com/home/bootstrap.min.js"></script>
+<script src="https://www.careeranna.com/home/owl.carousel.min.js"></script>
 <script>
-  $(document).ready(function() {
-     var owl = $(".owl-carousel");
-     var inputType = $('#range1');
-     owl.owlCarousel({
-      responsive:{
-        0:{
-            items:1.2,
-            nav:true
-        },
-        600:{
-            items:3,
-            nav:false
-        },
-        1000:{
-            items:3.5,
-            nav:true,
-            loop:false
-        }
-    },
-	      //loop:true,
-	      margin:10,
-    	  responsiveClass:true,
-    	  autoPlay: 3000, //Set AutoPlay to 3 seconds
-		  navigation : false, // Show next and prev buttons
-		  stopOnHover : true,
-      pagination : true,
-      navText : ["<i class='fa fa-caret-left'></i>","<i class='fa fa-caret-right'></i>"]
-    });
-    $("#range1").on("change", function(e) {
-	    e.preventDefault();
-	    // console.log(e.item.index);
-	    // FIGURE OUT HOW TO GET CAROUSEL INDEX
-	   
-	    $('#trending_slider').trigger('to.owl.carousl', [inputType.val(),1,true]);
-	    //get inout range count for max 
-      var owl_item = $('#trending_slider .owl-item').length;
-      console.log(owl_item);
-	    $('#range1').attr('max',owl_item);
-    });
-    
-  });
 </script>
   </body>
 </html>

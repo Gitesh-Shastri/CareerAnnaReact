@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import './SkillUp.css';
 
-import OwlCarousel from 'react-owl-carousel';
 import Card from '../TrendingCourse/Card/Card';
 
 class SkillUp extends Component {
@@ -93,7 +92,7 @@ class SkillUp extends Component {
 
 
     nextProperty = () => {
-		if(this.state.course.index != undefined){
+		if(this.state.course.index !== this.state.courses.length-2){
 			const newIndex = this.state.course.index+1;
 			this.setState({
 				course: this.state.courses[newIndex]
@@ -114,50 +113,30 @@ class SkillUp extends Component {
 
     const courses = this.state.courses;
 
-
-    const course_item = <div class="items trending_course">
-    <a href={this.state.course.url}>
-    <img src={this.state.course.pic_url} class="pic" alt="" />
-    <div class="course_heading">
-        {course.title}
-    </div>
-    <div class="course_views">
-    <i class="fa fa-users" aria-hidden="true"></i> &nbsp;{this.state.course.leaners}
-    </div>
-    <div class="rating">
-        <div class="rating_star">{this.state.course.ratings} &nbsp;
-            <span class="fa fa-star colorBlue"></span>
-            <span class="fa fa-star colorBlue"></span>
-            <span class="fa fa-star colorBlue"></span>
-            <span class="fa fa-star colorBlue"></span> 
-            <span class="fa fa-star"></span>       
-            <span></span>
-        </div>
-    </div>
-    </a>
-</div>
-
     return (
       <div class="MBACourses">
-      <div className="col col-sm-12 heading_small">
-            Skill-up Programes
-        </div>
-        
         <div class="row">
-            <div class="MBACard  d-none d-md-block">
+            <div class="MBACard ">
             <div className="MBACourseCardInside">
+            <div className="above_heading row">
+                <div className="leftheading">
                 <div className="mbaheading">
                     Skill-up
                 </div>
                 <div className="trendingcourse">
                     Certificates
                 </div>
-                <hr className="trending_line"/>
+                </div>
                 <div class="rupees">
                     <img class="rupeePic" src="https://www.careeranna.com/upload/main_page_testing/Vector.png" alt=""/>
                     <img class="ticker" src="https://www.careeranna.com/upload/main_page_testing/Ticker.png" alt=""/>
                 </div>
-                <div class="trending_off">
+                <div className="trending_line"/>
+                </div>
+                <div className="off_small d-block d-md-none d-lg-none">
+                    15% off on courses
+                </div>
+                <div class="trending_off ">
                         Upto <span>15% off</span>
                     </div>
                     <div class="trending_special">
@@ -166,14 +145,13 @@ class SkillUp extends Component {
                     <div class="trending_expire">
                     *Offer expires in 3 Days.
                     </div>
-                <button 
+               
+                </div>
+            </div>  <button 
                     class="next_video_prev"
                     onClick={() => this.prevProperty()} 
-                    disabled={course.index==0}
-                    hidden={course.index==0}
-                ><i class='fa fa-angle-left'></i></button>
-                </div>
-            </div> <div class="col-md-7 course_course_list">
+                    disabled={course.index===0}
+                ><i class='fa fa-angle-left'></i></button><div class="course_course_list">
                 <div className="trending_playlist" style={{
 				'transform': `translateX(-${course.index*(100/courses.length)}%)`
 			}}> {
@@ -187,8 +165,8 @@ class SkillUp extends Component {
              <button 
                      class="next_video_right" 
                     onClick={() => this.nextProperty()}
-                    disabled={course.index==courses.length-1}
-                    hidden={course.index==courses.length-1}
+                    disabled={course.index===courses.length-1}
+                    hidden={course.index===courses.length-1}
                     ><i class='fa fa-angle-right'></i></button>
             </div>    
         </div>
@@ -196,15 +174,15 @@ class SkillUp extends Component {
           <button 
 					      class="next_video_prev_small"
                 onClick={() => this.prevProperty()} 
-                disabled={course.index==0}
-                hidden={course.index==0}><i class='fa fa-angle-left'></i>
+                disabled={course.index===0}
+                hidden={course.index===0}><i class='fa fa-caret-left'></i>
               </button>
           <button 
 			 		class="next_video_right_small pull-right"
 					onClick={() => this.nextProperty()} 
-					disabled={course.index==courses.length-1}
-					hidden={course.index==courses.length-1}
-        ><i class='fa fa-angle-right'></i></button>     
+					disabled={course.index===courses.length-1}
+					hidden={course.index===courses.length-1}
+        ><i class='fa fa-caret-right'></i></button>     
           </div>
       </div>
     );

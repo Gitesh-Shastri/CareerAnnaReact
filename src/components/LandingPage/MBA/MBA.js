@@ -1,18 +1,9 @@
 import React, { Component } from 'react';
-import axios from 'axios';
 import './MBA.css';
 
-import Card from '../TrendingCourse/Card/Card'
-import OwlCarousel from 'react-owl-carousel';
+import Card from '../TrendingCourse/Card/Card';
 
 class MBA extends Component {
-
-    componentDidMount  () {
-        axios.get('https://www.careeranna.com/api/getTrendingCourse.php')
-        .then(response => {
-            console.log(response);
-        });
-    }
 
     state = {
         courses: [
@@ -47,7 +38,7 @@ class MBA extends Component {
                 pic_url: "https://www.careeranna.com/uploads/product_images/Course_Images/2018/01/1517390328business-book-and-glasses-1-1241387.jpg",
                 title:"NMAT Coaching Classes",
                 publish: "10th Sep, 2017",
-                index: 4,
+                index: 3,
                 leaners: "867+ Learners",
                 ratings: "4.8",
                 url: "https://www.careeranna.com/NMAT-Coaching-Classes"
@@ -56,7 +47,7 @@ class MBA extends Component {
                 pic_url: "https://www.careeranna.com/uploads/product_images/Course_Images/2018/01/1517390939studying-3-1480680.jpg",
                 title:"SNAP Coaching Class",
                 publish: "7th Sep, 2017",
-                index: 5,
+                index: 4,
                 leaners: "466+ Learners",
                 ratings: "4.73",
                 url: "https://www.careeranna.com/SNAP-Coaching-Class"
@@ -65,7 +56,7 @@ class MBA extends Component {
                 pic_url: "https://www.careeranna.com/uploads/product_images/Course_Images/2018/01/1517391759lupa-sobre-revista-1522543.jpg",
                 title:"MICA GE PI Preparation",
                 publish: "7th Sep, 2017",
-                index: 6,
+                index: 5,
                 leaners: "102+ Learners",
                 ratings: "4.7",
                 url: "https://www.careeranna.com/MICA-GE-PI-Preparation"
@@ -74,7 +65,7 @@ class MBA extends Component {
                 pic_url: "https://www.careeranna.com/uploads/product_images/Course_Images/2018/01/1517391859lupa-sobre-revista-1522543.jpg",
                 title:"TISS PIT PI Preparation",
                 publish: "17th Feb, 2017",
-                index: 7,
+                index: 6,
                 leaners: "103+ Learners",
                 ratings: "4.9",
                 url: "https://www.careeranna.com/TISS-PIT-PI-Preparation"
@@ -93,7 +84,7 @@ class MBA extends Component {
     } 
 
     nextProperty = () => {
-		if(this.state.course.index != undefined){
+		if(this.state.course.index !== this.state.courses.length-2){
 			const newIndex = this.state.course.index+1;
 			this.setState({
 				course: this.state.courses[newIndex]
@@ -116,23 +107,28 @@ class MBA extends Component {
 
     return (
       <div class="MBACourses">
-        <div className="col col-sm-12 heading_small">
-            MBA Programes
-        </div>
         <div class="row">
-            <div class="MBACard  d-none d-md-block">
+            <div class="MBACard ">
             <div className="MBACourseCardInside">
+                <div className="above_heading row ">
+                <div className="leftheading">
                 <div className="mbaheading">
                     MBA
                 </div>
                 <div className="trendingcourse">
-                    Programes
+                    Programmes
                 </div>
-                <hr className="trending_line"/>
+                </div>
                 <div class="rupees">
                     <img class="rupeePic" src="https://www.careeranna.com/upload/main_page_testing/Vector.png" alt=""/>
                     <img class="ticker" src="https://www.careeranna.com/upload/main_page_testing/Ticker.png" alt=""/>
                 </div>
+                <div className="trending_line"/>
+                </div>
+                <div className="off_small d-block d-md-none">
+                    15% off on courses
+                </div>
+                <div className="lower">
                 <div class="trending_off">
                         Upto <span>15% off</span>
                     </div>
@@ -142,14 +138,15 @@ class MBA extends Component {
                     <div class="trending_expire">
                     *Offer expires in 3 Days.
                     </div>
-                <button 
-                    class="next_video_prev"
-                    onClick={() => this.prevProperty()} 
-                    disabled={course.index==0}
-                    hidden={course.index==0}
-                ><i class='fa fa-angle-left'></i></button>
                 </div>
-            </div> <div class="col col-md-7 course_course_list">
+                </div>
+            </div> 
+            <button 
+                    class="next_video_prev"
+                    onClick={() => this.prevProperty()}
+                    disabled={course.index===0}
+                    ><i class='fa fa-angle-left'></i></button>
+            <div class="course_course_list">
                 <div className="trending_playlist" style={{
 				'transform': `translateX(-${course.index*(100/courses.length)}%)`
 			}}> {
@@ -162,8 +159,8 @@ class MBA extends Component {
              <button 
                      class="next_video_right" 
                     onClick={() => this.nextProperty()}
-                    disabled={course.index==courses.length-1}
-                    hidden={course.index==courses.length-1}
+                    disabled={course.index===courses.length-1}
+                    hidden={course.index===courses.length-1}
                     ><i class='fa fa-angle-right'></i></button>
             </div>    
         </div>
@@ -171,13 +168,13 @@ class MBA extends Component {
           <button 
 					      class="next_video_prev_small"
                 onClick={() => this.prevProperty()} 
-                disabled={course.index==0}
-                hidden={course.index==0}><i class='fa fa-angle-left'></i>
+                disabled={course.index===0}
+                hidden={course.index===0}><i class='fa fa-caret-left'></i>
               </button>
           <button 
 			 		class="next_video_right_small pull-right"
 					onClick={() => this.nextProperty()} 
-        ><i class='fa fa-angle-right'></i></button>     
+        ><i class='fa fa-caret-right'></i></button>     
           </div>
       </div>
     );
