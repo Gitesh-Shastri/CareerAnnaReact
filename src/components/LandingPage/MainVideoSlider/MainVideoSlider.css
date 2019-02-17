@@ -2,67 +2,47 @@
     padding: 1.5rem 0.5rem 1.5rem 3rem;
 }
 .MainVideoSlider .video_box_demo{
-    width: 252px;
-    height: 275px;
-    background: linear-gradient(90deg, #1E313A 0%, #3E657A 99.04%);
-    border-radius: 10px; 
-    color: white;
-    font-size: 1.6rem;
-    padding: 0.5rem 1rem 0.5rem 1rem;
+    width: 235px;
+    background: #1989CD;
+    height: 200px;
+    border-radius: 4px;
+    color: #fff;
+    padding: 1.5rem 1rem 0.5rem 1rem;
 }
 .MainVideoSlider .heading {
     font-size: 1.5rem;
+    line-height: 1rem;
 }
-.MainVideoSlider .heading_small {
-    display: none;
-}
-.MainVideoSlider .arrow_small{
-    display: none;
+.MainVideoSlider .subheading {
+    font-size: 1.5rem;
+    line-height: 1rem;
+    padding-top: 0.5rem;
 }
 .MainVideoSlider .trending_line {
     width: 20%;
     position: relative;
     left: 0%;
-    height: 0.1rem;
     background: #fff;
 }
-.MainVideoSlider .next_video_prev .fa{
+.MainVideoSlider .next_video_prev .fa, .next_video_right .fa{
     font-weight: 900;
-}
-.MainVideoSlider .next_video_right .fa{
-    font-weight: 900;
-    font-size: 2rem;
 }
 .MainVideoSlider .next_video_prev{  
     position: relative;
-    border-radius: 50%;
-    color: white;
-    opacity: 1;
-    outline: none;
     padding-bottom: 5px;
     padding-top: 5px;
-    top: 0px;
+    top: -15px;
     left: 92%;
     padding-right: 20px;
     padding-left: 18px;
-    background: #2c4654;
-    outline: none;
-    border: 2px solid white;
 }
 .MainVideoSlider .next_video_right{ 
     position: relative;
-    border-radius: 50%;
-    color: white;
-    opacity: 1;
-    outline: none;
     padding-bottom: 5px;
     padding-top: 5px;
     top: 34%;
     padding-right: 15px;
     padding-left: 20px;
-    background: #2c4654;
-    outline: none;
-    border: 2px solid white;
 }
 .MainVideoSlider .video_player_list {
     position: relative;
@@ -71,20 +51,56 @@
 .MainVideoSlider .video_playlist {
     display: flex;
     overflow: hidden;
-    margin-left: 2rem;
+    margin-left: 1rem;
     position: absolute;
-    padding-top: 5.2rem;
+    padding-top: 3rem;
     transition: transform 750ms cubic-bezier(0.455, 0.03, 0.515, 0.955); 
 }
 @media only screen and (max-width: 650px) {
-    .MainVideoSlider .video_box{   
-        visibility: hidden;
+    .MainVideoSlider {
+        padding-top: 2rem;
+    }
+    .MainVideoSlider .heading_small {
+        color: white;
+        padding-right: 0px;
+        height: 140px;
+        padding-left: 2rem;
+        display: block;
+    }
+    .MainVideoSlider .heading_small_inside {
+        height: 140px;
+        padding-top: 1rem;
+        padding-left: 1rem;
+        padding-bottom: 1rem;
+        background: #1989CD;
+    }
+    .MainVideoSlider .video_box{  
+        display: none;
         max-width: 0.2rem !important;
         padding: 0px;
     }
-    .MainVideoSlider .heading_small {
-        font-size: 1.3rem !important;
-        text-align: center;
+    .MainVideoSlider .video_player_list {
+        height: 210px;
+        padding-left: 0px;
+        padding-right: 0px; 
+    }
+    .MainVideoSlider .heading_small_main {
+        font-size: 2.2rem;
+        font-weight: 700;
+        text-align: left ;
+    }
+    .MainVideoSlider .sub_small {
+        font-size: 1.8rem;
+        text-align: left;
+        font-weight: 200;
+    }
+    .MainVideoSlider .line_small {
+        width: 29px;
+        position: relative;
+        left: 0%;
+        height: 0.2rem;
+        margin-top: 0.5rem;
+        background: #fff;
     }
     .MainVideoSlider .next_video_right {
         display: none;
@@ -93,17 +109,6 @@
         border: none;
         outline: none;
         background: transparent;
-    }
-    .MainVideoSlider .heading_small {
-        display: block;
-        font-size: 2rem;
-        padding-top: 0.5rem;
-        letter-spacing: 0.03rem;
-        text-align: center;
-        font-weight: 600;
-    }
-    .MainVideoSlider .arrow_small {
-        display: block;
     }
     .MainVideoSlider .video_playlist {
         padding-top: 2rem;

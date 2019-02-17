@@ -19,7 +19,7 @@ class LandingPage extends Component {
       <div className="LandingPage">
         <IntroVideoSlider />
         <MainVideoSlider title={"Trending"}/>
-        <MainVideoSlider title={"All Time Popular"}/>
+        <MainVideoSlider title={"Popular"}/>
         <TrendingCourse />
         <MBA />
         <SkillUp />

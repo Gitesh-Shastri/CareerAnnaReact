@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import './Card.css';
 
 const Card = ({review, current_index}) => {  
@@ -8,12 +8,10 @@ const Card = ({review, current_index}) => {
   profession,
   reviewbody} = review;  
   let style = {};
-  let style1  = {
-  };
-  
+
   const current_index_1 = current_index;
   let css_class="Card";
-  if(index==current_index_1) {
+  if(index ===current_index_1) {
     css_class="Card active";
   }
     return (

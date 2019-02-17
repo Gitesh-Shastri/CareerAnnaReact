@@ -24,7 +24,7 @@ class TrendingCourse extends Component {
                 leaners: "4603+ Learners",
                 ratings: "4.9",
                 index: 1,
-                key:"3",
+                key:"2",
                 url: "https://www.careeranna.com/certification/python-programming-online-course"
             },{
                 pic_url: "https://www.careeranna.com/uploads/product_images/Course_Images/2018/08/15336800721527172691img6.jpg",
@@ -33,17 +33,16 @@ class TrendingCourse extends Component {
                 leaners: "1258+ Learners",
                 ratings: "4.9",
                 index: 2,
-                key:"4",
+                key:"3",
                 url: "https://www.careeranna.com/certification/data-science-python"
-            },{index: 0,
-                
+            },{
                 pic_url: "https://www.careeranna.com/uploads/product_images/Course_Images/2018/07/15324338871529734481Image_abhishek.jpg",
                 title:"Certified Business Analyst With Excel",
                 publish: "7th Sep, 2017",
                 index: 3,
                 leaners: "3960+ Learners",
                 ratings: "4.89",
-                key:"5",
+                key:"4",
                 url: "https://www.careeranna.com/certification/certified-business-analyst-excel"
             },
             {
@@ -53,7 +52,7 @@ class TrendingCourse extends Component {
                 publish: "21st Jan, 2019",
                 leaners: "8350+ Learners",
                 ratings: "4.95",
-                key:"6",
+                key:"5",
                 url: "https://www.careeranna.com/TISSNET-Coaching-Class-2020"
                 },
         ],
@@ -72,18 +71,18 @@ class TrendingCourse extends Component {
 
 
     nextProperty = () => {
-		if(this.state.course.index != undefined){
+		if(this.state.course.index !== this.state.courses.length-2){
 			const newIndex = this.state.course.index+1;
 			this.setState({
 				course: this.state.courses[newIndex]
 			})
 		}
-  }
+    }
 
   prevProperty = () => {  
     const newIndex = this.state.course.index-1;
     this.setState({
-			course: this.state.courses[newIndex]
+		course: this.state.courses[newIndex]
     })
   } 
 
@@ -92,100 +91,69 @@ class TrendingCourse extends Component {
     const course = this.state.course;
 
     const courses = this.state.courses;  
-    const course_item = <div class="items trending_course">
-    <a href={this.state.course.url}>
-    <img src={this.state.course.pic_url} class="pic" alt="" />
-    <div class="course_heading">
-        {course.title}
-    </div>
-    <div class="course_views">
-    <i class="fa fa-users" aria-hidden="true"></i> &nbsp;{this.state.course.leaners}
-    </div>
-    <div class="rating">
-        <div class="rating_star">{this.state.course.ratings} &nbsp;
-            <span class="fa fa-star colorBlue"></span>
-            <span class="fa fa-star colorBlue"></span>
-            <span class="fa fa-star colorBlue"></span>
-            <span class="fa fa-star colorBlue"></span> 
-            <span class="fa fa-star"></span>       
-            <span></span>
-        </div>
-    </div>
-    </a>
-</div>
+    
     return (
       <div class="TrendingCourse">
-        <div className="row upcoming_languages">
-        <div class="col-sm-5 col-md-5 upcoming_heading"><h4>upcoming languages</h4></div> 
-            <div class="others"><h4>ગુજરાતી</h4></div>
-            <div class="others"><h4>বাংলা</h4></div>
-            <div class="others" ><h4> മലയാളം </h4></div>
-            <div class="others"><h4>ਪੰਜਾਬੀ</h4></div>
-            <div class="others"><h4> मराठी </h4></div>
-            <div class="others"><h4>  ಕನ್ನಡ  </h4></div>
+        <div className="row upcoming_languages px-3 py-6">
+            <div class="col-12 col-md-5 upcoming_heading p-0"><h4>upcoming languages</h4></div> 
+            <div className="col-md-7 col-12 p-0 row">
+            <div class="col-4 col-md-2 others p-0"><h4>ગુજરાતી</h4></div>
+            <div class="col-4 col-md-2 others p-0"><h4>বাংলা</h4></div>
+            <div class="col-4 col-md-2 others p-0" ><h4> മലയാളം </h4></div>
+            <div class="col-4 col-md-2 others p-0"><h4>ਪੰਜਾਬੀ</h4></div>
+            <div class="col-4 col-md-2  others p-0"><h4> मराठी </h4></div>
+            <div class="col-4 col-md-2 others p-0"><h4>  ಕನ್ನಡ  </h4></div>
+            </div>
         </div>
-        <div className="col col-sm-12 heading_small">
-                Trending Course
-      </div>
+        
         <div class="row">
-            <div class="trendingCourseCard  d-none d-md-block">
-                <div className="trendingCourseCardInside">
-                    <div className="trendingheading">
-                        Trending
+            <div class="trendingCourseCard">
+                <div className="trendingCourseCardInside row">
+                    <div className="upperheading">
+                        <div className="trendingheading">Trending</div>
+                        <div className="trendingsubheading">Courses</div>
+                        <hr class="trending_line"/>
                     </div>
-                    <div className="trendingsubheading">
-                        Courses
-                    </div>
-                    <hr class="trending_line"/>
-                    <div class="trending_off">
-                        Upto <span>15% off</span>
-                    </div>
-                    <div class="trending_special">
-                    Specialised Courses.
-                    </div>
-                    <div class="trending_expire">
-                    *Offer expires in 3 Days.
-                    </div> <button 
-					      class="next_video_prev"
-                onClick={() => this.prevProperty()} 
-                disabled={course.index==0}
-                hidden={course.index==0}><i class='fa fa-angle-left'></i>
-              </button>
+                    <div className="off_column">
+                        <div class="trending_off">Upto <span>15% off</span></div>
+                        <div class="trending_special">Specialised Courses.</div>
+                        <div class="trending_expire">*Offer expires in 3 Days.</div>
+                    </div> 
                 </div>
             </div>
-                <div class="col col-sm-12 col-md-7 course_course_list">
+                <button 
+					class="next_video_prev"
+                    onClick={() => this.prevProperty()}
+                    disabled={course.index === 0}
+                    ><i class='fa fa-angle-left'></i></button>
+            <div class="course_course_list">
                 <div className="trending_playlist" style={{
-				'transform': `translateX(-${course.index*(100/courses.length)}%)`
-			}}> {
-                courses.map((particular_course, i) => 
-                <Card key={i} course = {particular_course} current_index = {course.index}/>)
-            }
-            </div>
+                    'transform': `translateX(-${course.index*(100/courses.length)}%)`}}>
+                    {courses.map((particular_course, i) => 
+                        <Card key={i} course = {particular_course} current_index = {course.index}/>)}
+                </div>
             </div>  
-            <div className="col-md-1">
-          <button 
-			 		class="next_video_right"
-					onClick={() => this.nextProperty()} 
-					disabled={course.index==courses.length-1}
-					hidden={course.index==courses.length-1}
-        ><i class='fa fa-angle-right'></i></button>
-          </div>
-        </div><div className="col col-sm-12 arrow_small">
-          <button 
-					      class="next_video_prev_small"
+            <div className="arrow_right">
+                <button 
+                    class="next_video_right"
+                    onClick={() => this.nextProperty()} 
+                    disabled={course.index===courses.length-2}
+                    hidden={course.index===courses.length-2}><i class='fa fa-angle-right'></i></button>
+            </div>
+        </div>
+        <div className="col-12 d-none d-sm-block d-md-none arrow_small">
+            <button 
+				class="next_video_prev_small"
                 onClick={() => this.prevProperty()} 
-                disabled={course.index==0}
-                hidden={course.index==0}><i class='fa fa-angle-left'></i>
-              </button>
-          <button 
-			 		class="next_video_right_small pull-right"
-					onClick={() => this.nextProperty()} 
-					disabled={course.index==courses.length-1}
-					hidden={course.index==courses.length-1}
-        ><i class='fa fa-angle-right'></i></button>     
-          </div>
-      </div>
-    );
+                disabled={course.index===0}
+                hidden={course.index===0}><i class='fa fa-caret-left'></i></button>
+            <button 
+			 	class="next_video_right_small pull-right"
+				onClick={() => this.nextProperty()} 
+				disabled={course.index===courses.length-2}
+				hidden={course.index===courses.length-2}><i class='fa fa-caret-right'></i></button>     
+        </div>
+    </div>);
   }
 }
 

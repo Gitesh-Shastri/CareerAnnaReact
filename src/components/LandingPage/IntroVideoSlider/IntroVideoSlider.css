@@ -1,62 +1,51 @@
 /* Intro Slider Main */
 .IntroSlider {
-    padding: 2rem 0rem 2rem 0rem;
+    padding: 2rem 0rem 0rem 0rem;
+}
+.IntroSlider .player_main {
+    padding-left: 3rem;
+}
+.IntroSlider .main_logo{
+    position: absolute;
+    z-index: -1;
+    width: 90%;
+    height: 240px;
+    background: url('https://www.careeranna.com/assets/youtube_main.png');
 }
 .IntroSlider iframe {
-    width: 100%;
-    padding-left: 3.5rem;
     height: 240px;
+    width: 100%;
+}
+.IntroSlider .homepage_heading {
+    text-align: center;
 }
 .IntroSlider .heading {
     margin-top: 1.5rem;
     font-weight: 700;
-    text-align: center;
     font-size: 2.5rem;
 }
 .IntroSlider .subheading {
     font-weight: 400;
-    text-align: center;
     padding-top: 1rem;
     font-size: 1.10rem;
-    text-align: center;
     margin-bottom: 0.5rem;
-}
-.IntroSlider .subsubsubheading {
-    text-align: center;
 }
 .IntroSlider .subsubheading{
     font-size: 1rem;
-    text-align: center;
-}
-.IntroSlider .dots {
-    text-align: center;
-}
-.IntroSlider .dots .dot {
-    height: 0.5rem;
-    width: 0.5rem;
-    margin-right: 0.5rem;
-    background-color: #bbb;
-    opacity: 0.3;
-    border-radius: 50%;
-    display: inline-block;
-}
-.IntroSlider .dots .active_dot {
-    background-color: #bbb;
-    opacity: 1;
 }
 .IntroSlider .choose_language {
     padding: 2rem 0rem 1rem 0rem;
 }
 .IntroSlider .choose {
     font-weight: 700;
-    padding-left: 3.5rem;
-    line-height: 2.5rem;
+    padding-left: 3rem;
+    line-height: 2.4rem;
     font-size: 1.6rem;
-    text-align: center;
     text-align: left;
 }
 .IntroSlider .language_selector{
-    margin-right: 4rem;
+    width: 25%;
+    padding: 0px;
     border: none;
     line-height: 2.5rem;
     font-size: 1.3rem;
@@ -67,16 +56,13 @@
     color: #fafcfd;
     font-weight: 600;
     line-height: 2.5rem;
-    width: 8rem;
     border-radius: 4px;
     background: #1989cd;
-    padding-bottom: 0px !important;
     border-bottom: 2px solid #1989cd;
 }
-.IntroSlider .categories{
-    margin-top: 1rem !important;
-    padding: 2rem 2rem 2rem 0rem;
-    color: white !important;
+.IntroSlider .categories{   
+    padding: 2rem 2rem 2rem 1rem !important;
+    color: white;
     background: linear-gradient(90deg, #1E313A 0%, #3E657A 99.04%);
 }
 .IntroSlider .upcoming_heading h4{
@@ -86,19 +72,22 @@
     font-size: 1.3rem;
 }
 .IntroSlider .category h4 {
-    padding-left: 2.5rem;
-    padding-right: 0.5rem;
     line-height: 2rem;
     text-align: center;
     font-weight: 700;
     font-size: 1.1rem;
 }
-.IntroSlider .homepage_heading {
-    padding-left: 0.5rem;
-}
 @media only screen and (max-width: 650px) {
+    .IntroSlider {
+        padding-top: 0px;
+    }
+    .IntroSlider .main_header_small{
+        color: white;
+        text-align: center;
+    }
     .IntroSlider .choose {
         padding-left: 0px;
+        font-size: 1.2rem;
         text-align: center;
     }
     .IntroSlider .heading {
@@ -106,25 +95,51 @@
     }
     .IntroSlider .language_selector {
         margin-right: 0rem;
-        min-width: 50%;
+        margin-left: 2rem;
+        min-width: 40%;
     }
     .IntroSlider .upcoming_heading {
         text-align: center;
-    }
-    .IntroSlider .category{
-        min-width: 30%;
-        margin-left: 3rem;
     }
     .IntroSlider .category h4{
         text-align: left;
         padding-left: 0rem;
         padding-right: 0rem;
-        font-size: 1rem;
+        font-size: 0.9rem;
     }
     .IntroSlider .categories{
         padding-left: 1rem;
+        padding-right: 1rem;
+    }
+    .IntroSlider .categories .row {
+        padding-left: 2rem !important;
+    }
+    .IntroSlider .homepage_heading {
+        padding: 0px;
     }
     .IntroSlider .subsubsubheading{
         text-align: center;
+    }
+    .IntroSlider .heading_small_internet{
+        font-size: 2rem;
+    }
+    .IntroSlider .heading_small_learning{
+        font-size: 2.5rem;
+        font-weight: 700;
+    }
+    .IntroSlider .subheading {
+        font-size: 1rem;
+        padding: 1rem;
+        font-weight: 900;
+    }
+    .IntroSlider .background_small{
+        background: url('https://careeranna.com/home/static/media/main_image_header.png');
+        background-repeat: no-repeat;
+        background-size: cover;  
+    }
+    .IntroSlider .below_background_small {
+        padding-top: 1rem;
+        background: #1e313ae0;
+        font-size: 0.9rem;
     }
 }

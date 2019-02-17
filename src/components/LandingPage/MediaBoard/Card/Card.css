@@ -1,6 +1,6 @@
 .mediboard_card {
     width: 350px;
-    height: 250px;
+    height: 270px;
     padding: 1rem;
     opacity: 0.8;
 }
@@ -9,7 +9,6 @@
     background: #fff;
     transform: scale(1.05);
     transition: transform 750ms cubic-bezier(0.455, 0.03, 0.515, 0.955); 
-    padding: 0.5rem; 
     -webkit-box-shadow: 0px 0px 5px 5px#ccc;
        box-shadow: 0px 0px 5px 5px#ccc;
     border-radius: 10px 10px;
@@ -63,6 +62,9 @@
     padding-left: 0.5rem;
     font-family: fontAwesome;
 }
+.mediboard_card a:hover{
+    color: rgb(0, 0, 210);
+}
 @media only screen and (max-width: 650px) {
     .mediboard_card {
         width: 255px !important;
@@ -70,4 +72,5 @@
         padding: 1rem;
         opacity: 0.8;
     }
+    
 }

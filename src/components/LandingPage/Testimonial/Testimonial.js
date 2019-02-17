@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import './Testimonial.css';
 
 import Card from './Card/Card';
-import OwlCarousel from 'react-owl-carousel';
 
 class Testimonial extends Component {
     
@@ -83,7 +82,7 @@ class Testimonial extends Component {
 
     nextProperty = () => {
         console.log(this.state.user.index);
-		if(this.state.user.index != undefined){
+		if(this.state.user.index !== undefined){
 			const newIndex = this.state.user.index+1;
 			this.setState({
 				user: this.state.users[newIndex]
@@ -92,7 +91,7 @@ class Testimonial extends Component {
   }
 
   timer() {
-    if(this.state.user.index == this.state.users.length-1) { 
+    if(this.state.user.index === this.state.users.length-1) { 
         this.setState({
             user: this.state.users[0]
         })
@@ -121,39 +120,10 @@ class Testimonial extends Component {
 
     const user_item = this.state.user;
 
-    const user = <div class="items testimonial_course">
-    <div class="row">
-        <div class="col-md-4">
-                <img src={this.state.user.userpic} class="img-responsive img-circle"
-        alt=""/>
-        </div>
-        <div class="col-md-8">
-                <div class="user_name">{this.state.user.username}</div>
-                <div class="profession">{this.state.user.profession}</div>
-                <div class="rating">
-                        <div class="rating_star">
-                            <span class="fa fa-star colorBlue"></span>
-                            <span class="fa fa-star colorBlue"></span>
-                            <span class="fa fa-star colorBlue"></span>
-                            <span class="fa fa-star colorBlue"></span> 
-                            <span class="fa fa-star"></span>       
-                            <span></span>
-                        </div>
-                    </div>
-        <div class="col-md-12 review_created">
-            January 15, 2019
-        </div>
-        </div>
-        <div class="col-md-12 review">
-            {this.state.user.reviewbody}
-        </div>
-    </div>
-    
-</div>;
-
+   
     return (
       <div class="TestimonialReviews">
-        <div className="col col-sm-12 heading_small">
+        <div className="col-12 heading_small">
         Student Testimonials
         </div>
       
@@ -169,16 +139,16 @@ class Testimonial extends Component {
                 </div>
                 </div>
             </div>
-            <div className="arrow_row">
+            </div>
+            <div className="arrow_row d-none d-md-block">
             <button 
-                    class="next_video_prev"
+                    class="review_prev"
                     onClick={() => this.prevProperty()} 
-                    disabled={user_item.index==0}
-                    hidden={user_item.index==0}
+                    disabled={user_item.index===0}
+                    hidden={user_item.index===0}
                 ><i class='fa fa-caret-left'></i></button>
             </div>
-            </div>
-            <div class="col-md-7 review_play_list">
+            <div class="review_play_list">
                 <div className="review_playlist" style={{
 				'transform': `translateX(-${user_item.index*(100/users.length)}%)`
 			}}> {
@@ -187,23 +157,22 @@ class Testimonial extends Component {
             }
             </div>
             </div>
-            <div class="col-md-1 test_arrow">
-                    
+            <div class="test_arrow d-none d-md-block">
                     <button 
                             class="next_video_right_test" 
                            onClick={() => this.nextProperty()}
                            ><i class='fa fa-caret-right'></i></button>
                    </div> 
             </div>
-            <div className="col col-sm-12 arrow_small">
+            <div className="col-12 arrow_small">
           <button 
 					      class="next_video_prev_small"
-                onClick={() => this.prevProperty()} ><i class='fa fa-angle-left'></i>
+                onClick={() => this.prevProperty()} ><i class='fa fa-caret-left'></i>
               </button>
           <button 
 			 		class="next_video_right_small pull-right"
 					onClick={() => this.nextProperty()} 
-        ><i class='fa fa-angle-right'></i></button>     
+        ><i class='fa fa-caret-right'></i></button>     
           </div>
       </div>
     );

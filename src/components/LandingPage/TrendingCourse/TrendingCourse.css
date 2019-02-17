@@ -1,8 +1,10 @@
+/* Trending Course */
+/* Upcoming Language geading */
 .TrendingCourse .upcoming_languages {
-    margin-top: 1rem !important;
-    padding: 2rem 2rem 2rem 0rem !important;
-    color: white !important;
-    background: linear-gradient(90deg, #1E313A 0%, #3E657A 99.04%);
+    margin-top: 2rem;
+    padding: 2rem 0rem 2rem 0rem;
+    color: #1E313A !important;
+    box-shadow: 0px 0px 2px 2px #ccc;
 }
 .TrendingCourse .upcoming_heading h4{
     line-height: 2rem;
@@ -11,22 +13,19 @@
     font-size: 1.3rem;
 }
 .TrendingCourse .upcoming_languages .others h4{
-    padding-left: 2.5rem;
-    padding-right: 1.2rem;
     line-height: 2rem;
     text-align: center;
     font-weight: 700;
     font-size: 1.1rem;
 }
+
+/*  Trending Course Playlist */
 .TrendingCourse .trendingCourseCard {
-    width: 30%;
+    width: 320px;
     padding: 1.5rem 0rem 1.5rem 3rem;
-    position: relative;
-    z-index: 2;
-    background: white;
 }
 .TrendingCourse .trendingCourseCardInside {
-    width: 80%;
+    width: 269px;
     height: 300px;
     background: #1989CD;
     border-radius: 10px; 
@@ -65,61 +64,56 @@
 .TrendingCourse .trending_expire {
     font-size: 0.9rem;
     text-align: right;
-    padding-top: 2.5rem;
 }
-.TrendingCourse .course_course_list{
+.course_course_list{
     position: relative;
     padding-top: 2rem;
-    height: 350px;
-    overflow: hidden;
+    overflow-y: hidden;
+    overflow-x: auto;
+    width: 65%;
 }
 .TrendingCourse .trending_playlist {
     position: absolute;
     display: flex;
 }
-.TrendingCourse .next_video_prev{  
-    position: absolute;
+::-webkit-scrollbar { 
+    display: none; 
+}
+.next_video_prev{  
+    position: relative;
+    top: 140px;
+    left: -30px;
     border-radius: 50%;
     color: white;
-    opacity: 1;
-    outline: none;
-    padding-bottom: 5px;
-    left: 75%;
-    padding-top: 6px;
-    top: 40%;
-    padding-right: 20px;
-    padding-left: 20px;
-    background: #2c4654;
-    outline: none;
+    width: 3.5rem;
+    height: 3.5rem;
+    background: #2e4655;
     border: 2px solid white;
 }
-.next_video_right{    
+.next_video_right{ 
     position: relative;
     border-radius: 50%;
-    color: white;
-    opacity: 1;
-    font-size: 25px;
-    outline: none !important;
-    padding-bottom: 5px;
-    padding-top: 5px;
+    color: white;   
     top: 47%;
-    padding-right: 20px;
-    padding-left: 20px;
-    background: #2c4654;
-    border: 2px solid #fff;
+    width: 3.5rem;
+    height: 3.5rem;
+    background: #2e4655;
+    border: 2px solid white;
 }
-.TrendingCourse .heading_small {
-    display: none;
+.next_video_prev .fa.fa-angle-left {
+    font-size: 1.5rem;
+    font-weight: 900;
 }
-.TrendingCourse .arrow_small{
-    display: none;
+button[disabled]{
+    visibility: hidden;
 }
 @media only screen and (max-width: 650px) {
+    .TrendingCourse .trendingCourseCard {
+        width: 100%;
+        padding: 2rem 0rem 2rem 2rem;
+    }
     .TrendingCourse .upcoming_heading h4 {
         text-align: center;
-    }
-    .TrendingCourse .others {
-        min-width: 50%;
     }
     .TrendingCourse .next_video_right {
         display: none;
@@ -135,9 +129,44 @@
         text-align: center;
         font-weight: 600;
     }
+    .course_course_list {
+        padding-top: 0px;
+        height: 320px;
+        width: 100%;
+    }
     .next_video_prev_small, .next_video_right_small {
         background: transparent !important;
         outline: none !important;
         border: none !important;
+    }
+   
+    .TrendingCourse .trendingCourseCardInside {
+        width: 100%;
+        border-radius: 0px;
+        padding-left: 1rem;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        height: 140px;
+    }
+    .TrendingCourse .next_video_prev {
+        display: none;
+    }
+    .TrendingCourse .upperheading {
+        display: inline-block;
+        float: left;
+    }
+    .TrendingCourse .off_column {
+        float: right;
+        display: inline-block;
+        text-align: right;
+    }
+    .TrendingCourse .trendingCourseCardInside {
+        display: block;
+    }
+    .TrendingCourse .off_column .trending_special {
+        text-align: right;
+    }
+    .TrendingCourse .trending_expire {
+        display: none;
     }
 }
