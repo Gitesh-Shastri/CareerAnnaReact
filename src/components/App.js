@@ -19,9 +19,9 @@ class App extends Component {
       <BrowserRouter>
       <div className="App">
       <Navigation />
-      <Route path="https://www.careeranna.in/CareerAnnaContent" exact component={ ParticularCourse } />
-      <Route path="https://www.careeranna.in/CertificationCourse" exact component={ CertificationCourse } /> 
-      <Route path="*" component={ LandingPage } /> 
+      <Route path="http://careeranna.in/CareerAnnaReact/client/build/CareerAnnaContent" exact component={ ParticularCourse } />
+      <Route path="http://careeranna.in/CareerAnnaReact/client/build/CertificationCourse" exact component={ CertificationCourse } /> 
+      <Route path="http://careeranna.in/CareerAnnaReact/client/build/" exact component={ LandingPage } /> 
       <Footer />
       {/* 
           <LandingPage />
